@@ -1,0 +1,3955 @@
+﻿Filename:+  OU  -
+RanBin#(1,100)→N↲
+0→X↲
+While X≠N↲
+?→X↲
+If X<N↲
+Then "Plus grand"↲
+Else "Plus petit"↲
+IfEnd↲
+WhileEnd
+
+Filename:  
+ClrGraph↲
+While 1↲
+PxlOn 10,10↲
+WhileEnd↲
+PxlOn 63,127↲
+
+Filename:1P22
+1→M↲
+0→G↲
+↲
+While M↲
+↲
+G²-G+11→X↲
+↲
+For 2→I To X-1↲
+Frac (X÷I)=0⇒0→M↲
+Next↲
+Isz G↲
+↲
+WhileEnd↲
+↲
+G-1⌟
+X
+
+Filename:2048
+1→θ↲
+Prog "API"↲
+↲
+For 1→I To 65 Step 16↲
+Vertical I+30↲
+F-Line 31,I,95,I↲
+Next↲
+↲
+ClrMat A↲
+{4,4}→Dim Mat A↲
+↲
+While B=0↲
+↲
+If RanBin#(0,1)↲
+Then 2→G↲
+Else 4→G↲
+IfEnd↲
+↲
+Do↲
+RanBin#(1,4)→X↲
+RanBin#(1,4)→Y↲
+LpWhile Mat A[X,Y]≠0↲
+↲
+G→Mat A[X,Y]↲
+G→T↲
+8→θ↲
+Prog "API"↲
+↲
+0⇒GAME ENDED ?↲
+↲
+Do↲
+Getkey→K↲
+If K≠0↲
+Then If K=28↲
+Then 1→r↲
+Else If K=27↲
+Then 2→r↲
+Else If K=37↲
+Then 3→r↲
+Else If K=38↲
+Then 4→r↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+If r≠0↲
+Then 1→M↲
+0→r↲
+IfEnd↲
+IfEnd↲
+LpWhile M=0↲
+0→M↲
+↲
+0⇒GAME ENDED ?↲
+↲
+↲
+WhileEnd
+
+Filename:2048 2
+If Ans=37↲
+Then ↲
+For 1→J To 3↲
+For 1→I To 4↲
+Mat D[3,I]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[4,I]≠0↲
+Then ↲
+If Z=Mat D[4,I]↲
+Then 2Z→Mat D[4,I]↲
+0→Mat D[3,I]↲
+IfEnd↲
+Else ↲
+Z→Mat D[4,I]↲
+0→Mat D[3,I]↲
+IfEnd↲
+IfEnd↲
+↲
+Mat D[2,I]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[3,I]≠0↲
+Then ↲
+If Z=Mat D[3,I]↲
+Then ↲
+2Z→Mat D[3,I]↲
+0→Mat D[2,I]↲
+IfEnd↲
+Else ↲
+If Mat D[4,I]≠0↲
+Then ↲
+If Z=Mat D[4,I]↲
+Then ↲
+2Z→Mat D[4,I]↲
+0→Mat D[2,I]↲
+Else ↲
+Z→Mat D[3,I]↲
+0→Mat D[2,I]↲
+IfEnd↲
+Else ↲
+Z→Mat D[4,I]↲
+0→Mat D[2,I]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+↲
+↲
+Mat D[1,I]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[2,I]≠0↲
+Then ↲
+If Z=Mat D[2,I]↲
+Then ↲
+2Z→Mat D[2,I]↲
+0→Mat D[1,I]↲
+IfEnd↲
+Else ↲
+If Mat D[3,I]≠0↲
+Then ↲
+If Z=Mat D[3,I]↲
+Then ↲
+2Z→Mat D[3,I]↲
+0→Mat D[1,I]↲
+Else ↲
+Z→Mat D[2,I]↲
+0→Mat D[1,I]↲
+IfEnd↲
+Else ↲
+If Mat D[4,I]≠0↲
+Then ↲
+If Z=Mat D[4,I]↲
+Then ↲
+2Z→Mat D[4,I]↲
+0→Mat D[1,I]↲
+Else ↲
+Z→Mat D[3,I]↲
+0→Mat D[1,I]↲
+IfEnd↲
+Else ↲
+Z→Mat D[4,I]↲
+0→Mat D[1,I]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Next↲
+Next↲
+IfEnd↲
+↲
+↲
+↲
+If Ans=28↲
+Then ↲
+For 1→J To 3↲
+For 1→I To 4↲
+Mat D[2,I]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[1,I]≠0↲
+Then ↲
+If Z=Mat D[1,I]↲
+Then 2Z→Mat D[1,I]↲
+0→Mat D[2,I]↲
+IfEnd↲
+Else ↲
+Z→Mat D[1,I]↲
+0→Mat D[2,I]↲
+IfEnd↲
+IfEnd↲
+↲
+Mat D[3,I]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[2,I]≠0↲
+Then ↲
+If Z=Mat D[2,I]↲
+Then ↲
+2Z→Mat D[2,I]↲
+0→Mat D[3,I]↲
+IfEnd↲
+Else ↲
+If Mat D[1,I]≠0↲
+Then ↲
+If Z=Mat D[1,I]↲
+Then ↲
+2Z→Mat D[1,I]↲
+0→Mat D[3,I]↲
+Else ↲
+Z→Mat D[2,I]↲
+0→Mat D[3,I]↲
+IfEnd↲
+Else ↲
+Z→Mat D[1,I]↲
+0→Mat D[3,I]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+↲
+↲
+Mat D[4,I]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[3,I]≠0↲
+Then ↲
+If Z=Mat D[3,I]↲
+Then ↲
+2Z→Mat D[3,I]↲
+0→Mat D[4,I]↲
+IfEnd↲
+Else ↲
+If Mat D[2,I]≠0↲
+Then ↲
+If Z=Mat D[2,I]↲
+Then ↲
+2Z→Mat D[2,I]↲
+0→Mat D[4,I]↲
+Else ↲
+Z→Mat D[3,I]↲
+0→Mat D[4,I]↲
+IfEnd↲
+Else ↲
+If Mat D[1,I]≠0↲
+Then ↲
+If Z=Mat D[1,I]↲
+Then ↲
+2Z→Mat D[1,I]↲
+0→Mat D[4,I]↲
+Else ↲
+Z→Mat D[2,I]↲
+0→Mat D[4,I]↲
+IfEnd↲
+Else ↲
+Z→Mat D[1,I]↲
+0→Mat D[4,I]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Next↲
+Next↲
+IfEnd↲
+↲
+↲
+↲
+If Ans=27↲
+Then ↲
+For 1→J To 3↲
+For 1→I To 4↲
+Mat D[I,3]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[I,4]≠0↲
+Then ↲
+If Z=Mat D[I,4]↲
+Then 2Z→Mat D[I,4]↲
+0→Mat D[I,3]↲
+IfEnd↲
+Else ↲
+Z→Mat D[I,4]↲
+0→Mat D[I,3]↲
+IfEnd↲
+IfEnd↲
+↲
+Mat D[I,2]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[I,3]≠0↲
+Then ↲
+If Z=Mat D[I,3]↲
+Then ↲
+2Z→Mat D[I,3]↲
+0→Mat D[I,2]↲
+IfEnd↲
+Else ↲
+If Mat D[I,4]≠0↲
+Then ↲
+If Z=Mat D[I,4]↲
+Then ↲
+2Z→Mat D[I,4]↲
+0→Mat D[I,2]↲
+Else ↲
+Z→Mat D[I,3]↲
+0→Mat D[I,2]↲
+IfEnd↲
+Else ↲
+Z→Mat D[I,4]↲
+0→Mat D[I,2]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+↲
+↲
+Mat D[I,1]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[I,2]≠0↲
+Then ↲
+If Z=Mat D[I,2]↲
+Then ↲
+2Z→Mat D[I,2]↲
+0→Mat D[I,1]↲
+IfEnd↲
+Else ↲
+If Mat D[I,3]≠0↲
+Then ↲
+If Z=Mat D[I,3]↲
+Then ↲
+2Z→Mat D[I,3]↲
+0→Mat D[I,1]↲
+Else ↲
+Z→Mat D[I,2]↲
+0→Mat D[I,1]↲
+IfEnd↲
+Else ↲
+If Mat D[I,4]≠0↲
+Then ↲
+If Z=Mat D[I,4]↲
+Then ↲
+2Z→Mat D[I,4]↲
+0→Mat D[I,1]↲
+Else ↲
+Z→Mat D[I,3]↲
+0→Mat D[I,1]↲
+IfEnd↲
+Else ↲
+Z→Mat D[I,4]↲
+0→Mat D[I,1]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Next↲
+Next↲
+IfEnd↲
+↲
+↲
+↲
+If Ans=38↲
+Then ↲
+For 1→J To 3↲
+For 1→I To 4↲
+Mat D[I,2]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[I,1]≠0↲
+Then ↲
+If Z=Mat D[I,1]↲
+Then 2Z→Mat D[I,1]↲
+0→Mat D[I,2]↲
+IfEnd↲
+Else ↲
+Z→Mat D[I,1]↲
+0→Mat D[I,2]↲
+IfEnd↲
+IfEnd↲
+↲
+Mat D[I,3]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[I,2]≠0↲
+Then ↲
+If Z=Mat D[I,2]↲
+Then ↲
+2Z→Mat D[I,2]↲
+0→Mat D[I,3]↲
+IfEnd↲
+Else ↲
+If Mat D[I,1]≠0↲
+Then ↲
+If Z=Mat D[I,1]↲
+Then ↲
+2Z→Mat D[I,1]↲
+0→Mat D[I,3]↲
+Else ↲
+Z→Mat D[I,2]↲
+0→Mat D[I,3]↲
+IfEnd↲
+Else ↲
+Z→Mat D[I,1]↲
+0→Mat D[I,3]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+↲
+↲
+Mat D[I,4]→Z↲
+If Z≠0↲
+Then ↲
+If Mat D[I,3]≠0↲
+Then ↲
+If Z=Mat D[I,3]↲
+Then ↲
+2Z→Mat D[I,3]↲
+0→Mat D[I,4]↲
+IfEnd↲
+Else ↲
+If Mat D[I,2]≠0↲
+Then ↲
+If Z=Mat D[I,2]↲
+Then ↲
+2Z→Mat D[I,2]↲
+0→Mat D[I,4]↲
+Else ↲
+Z→Mat D[I,3]↲
+0→Mat D[I,4]↲
+IfEnd↲
+Else ↲
+If Mat D[I,1]≠0↲
+Then ↲
+If Z=Mat D[I,1]↲
+Then ↲
+2Z→Mat D[I,1]↲
+0→Mat D[I,4]↲
+Else ↲
+Z→Mat D[I,2]↲
+0→Mat D[I,4]↲
+IfEnd↲
+Else ↲
+Z→Mat D[I,1]↲
+0→Mat D[I,4]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Next↲
+Next↲
+IfEnd
+
+Filename:21P117
+?→A↲
+1→N↲
+↲
+Do↲
+Isz N↲
+LpWhile N^5-3N^3≤A
+
+Filename:21P31
+?→N↲
+1→U↲
+1→S↲
+0→I↲
+While I<N↲
+2U+1-I→U↲
+S+U→S↲
+I+1→I↲
+WhileEnd↲
+U⌟
+S↲
+
+Filename:23P32
+?→N↲
+0→S↲
+(N-1)*2^N→R↲
+For 1→I To N↲
+S+I*2^(I-1)→S↲
+Next↲
+S⌟
+R
+
+Filename:32P118
+?→K↲
+0→N↲
+While 0.4^NY10^-K↲
+Isz N↲
+WhileEnd
+
+Filename:33P118
+0→N↲
+Do↲
+Isz N↲
+LpWhile 0.4^N-0.4^(N+1)Y10^(-4)↲
+N
+
+Filename:59P121-0
+?→A↲
+0→N↲
+While N²≤A↲
+Isz N↲
+WhileEnd↲
+N⌟
+0→N↲
+While 1.2^N≤A↲
+Isz N↲
+WhileEnd↲
+N
+
+Filename:59P121-1
+?→A↲
+0→M↲
+0→N↲
+While N²≤A And 1.2^M≤A↲
+N+1→N↲
+M+1→M↲
+WhileEnd↲
+M⌟
+N⌟
+↲
+N
+
+Filename:61P121
+?→O↲
+0→P↲
+-1→R:1→S↲
+sin 1→U↲
+1→Q↲
+ClrText↲
+↲
+For 2→N To O↲
+↲
+R+((-1)÷N²)→R↲
+Locate 1,1,R↲
+Locate 1,7,-R↲
+↲
+U+(sin N)÷O²→U↲
+Locate 1,4,U↲
+↲
+U>P⇒U→P↲
+U<Q⇒U→Q↲
+Locate 1,3,Q↲
+Locate 1,5,P↲
+↲
+Locate 15,7,N↲
+↲
+Next
+
+Filename:ALIGNES
+"x 1":?→A↲
+"y 1":?→B↲
+"x 2":?→C↲
+"y 2":?→D↲
+"x 3":?→E↲
+"y 3":?→F↲
+If AB=CD=EF↲
+Then "Alignés"↲
+Else "Non alignés"↲
+IfEnd
+
+Filename:AOCHPART
+If θ≠42↲
+Then "A"?→A:"B"?→B↲
+"C"?→C:"D"?→D:"M"?→M↲
+IfEnd↲
+0→θ↲
+↲
+2→U↲
+For 1→N To M↲
+U+3*4^(N-1)→U↲
+Next↲
+↲
+U→Dim List 2↲
+U→Dim List 3↲
+A→List 2[1↲
+B→List 3[1↲
+C→List 2[U↲
+D→List 3[U↲
+↲
+For 1→H To M↲
+↲
+1→P:2→Q↲
+While Q≤U↲
+↲
+If List 2[Q]≠0↲
+Then ↲
+↲
+List 2[P→A↲
+List 3[P→B↲
+List 2[Q→C↲
+List 3[Q→D↲
+↲
+Min({A,C})→Y↲
+Max({A,C})-Y→K↲
+↲
+If Y=A↲
+Then 1→Z:2→V↲
+Else 2→Z:1→V↲
+IfEnd↲
+↲
+Y+(ZK÷3)→A↲
+Y+(VK÷3)→C↲
+↲
+Min({B,D})→Y↲
+Max({B,D})-Y→K↲
+↲
+If Y=B↲
+Then 1→Z:2→V↲
+Else 2→Z:1→V↲
+IfEnd↲
+↲
+Y+(ZK÷3)→B↲
+Y+(VK÷3)→D↲
+↲
+(Q-P)(1÷4)+P→W↲
+A→List 2[W↲
+B→List 3[W↲
+(Q-P)(3÷4)+P→W↲
+C→List 2[W↲
+D→List 3[W↲
+↲
+(A+C)÷2→I↲
+(B+D)÷2→J↲
+↲
+√((A-I)²+(B-J)²)→R↲
+↲
+A-I→E↲
+B-J→F↲
+↲
+Rad↲
+cos⁻¹ (E÷R)→θ↲
+↲
+J+Rsin θ→G↲
+↲
+G≠B⇒-θ→θ↲
+↲
+-π÷2+θ→θ↲
+↲
+√((3÷4)(2R)²)→S↲
+↲
+I+Scos θ→Z↲
+J+Ssin θ→V↲
+↲
+(Q-P)(2÷4)+P→W↲
+Z→List 2[W↲
+V→List 3[W↲
+↲
+Q→P↲
+↲
+IfEnd↲
+Isz Q↲
+↲
+WhileEnd↲
+↲
+Next
+
+Filename:AOCHREND
+0⇒63 31 30 3 1↲
+7→Dim List 1↲
+"A"?→A:"B"?→B↲
+"R"?→R:"D"?→D↲
+"M"?→M:"E"?→E↲
+↲
+A→List 1[1↲
+B→List 1[2↲
+R→List 1[3↲
+D→List 1[4↲
+M→List 1[5↲
+E→List 1[6↲
+1→List 1[7↲
+↲
+Cls↲
+While List 1[7]<4↲
+↲
+List 1[1→A↲
+List 1[2→B↲
+List 1[3→R↲
+List 1[4→D↲
+List 1[5→M↲
+↲
+2π÷3→G↲
+↲
+List 1[7→I↲
+A+Rcos (D+GI)→J↲
+B+Rsin (D+GI)→K↲
+A+Rcos (D+G(I+1))→A↲
+B+Rsin (D+G(I+1))→B↲
+↲
+J→C:K→D↲
+↲
+42→θ↲
+Prog "AOCHPART"↲
+↲
+42→θ↲
+If List 1[6]=0↲
+Then Prog "AOCHVISU"↲
+Else Prog "AOCHVIS3"↲
+IfEnd↲
+↲
+List 1[7]+1→List 1[7]↲
+↲
+WhileEnd↲
+↲
+While Getkey=0↲
+WhileEnd
+
+Filename:AOCHVIS3
+θ≠42⇒Cls↲
+0→θ↲
+↲
+Dim List 2→X↲
+↲
+63→r↲
+↲
+For 1→I To X-1↲
+↲
+List 2[I→A↲
+r-List 3[I→B↲
+List 2[I+1→C↲
+r-List 3[I+1→D↲
+↲
+RndFix(A,0→A↲
+RndFix(B,0→B↲
+RndFix(C,0→C↲
+RndFix(D,0→D↲
+↲
+F-Line A,B,C,D↲
+↲
+Next
+
+Filename:AOCHVISU
+θ≠42⇒Cls↲
+0→θ↲
+↲
+Dim List 2→L↲
+63→r↲
+↲
+For 1→I To L↲
+↲
+List 2[I→X↲
+r-List 3[I→Y↲
+↲
+PlotOn X,Y↲
+↲
+Next
+
+Filename:API
+θ=1⇒Goto 1↲
+θ=2⇒Goto 2↲
+θ=3⇒Goto 3↲
+θ=4⇒Goto 4↲
+θ=5⇒Goto 5↲
+θ=6⇒Goto 6↲
+θ=7⇒Goto 7↲
+θ=8⇒Goto 8↲
+{1,1}→Dim Mat R↲
+Return↲
+↲
+0⇒Set graph↲
+Lbl 1↲
+Prog "~SETGRAP"↲
+Return↲
+↲
+0⇒Set back normal graph↲
+Lbl 2↲
+Prog "~SETBACK"↲
+Return↲
+↲
+0⇒Characters of number↲
+Lbl 3↲
+Prog "~NBRLENG"↲
+Return↲
+↲
+0⇒Return unités↲
+Lbl 4↲
+Prog "~NBRUNIT"↲
+Return↲
+↲
+0⇒Return dizaines...↲
+Lbl 5↲
+Prog "~NBRDIZA"↲
+Return↲
+↲
+0⇒Return centaines...↲
+Lbl 6↲
+Prog "~NBRCENT"↲
+Return↲
+↲
+Lbl 7↲
+Prog "~DIZAINE"↲
+Return↲
+↲
+0~PRINT TXT MIDDLE↲
+Lbl 8↲
+T→r↲
+Prog "~NBRLENG"↲
+Text 16(Y-1)+5,16(X-1)+39-θ,T↲
+Return
+
+Filename:BALAYAGE
+"Réel":?→A↲
+"Réel":?→B↲
+"Entier Y 100":?→N↲
+↲
+(B-A)÷N→E↲
+0→I↲
+↲
+For 0→K To N-1↲
+↲
+A+KE→O↲
+A+(K+1)E→P↲
+O^3-3O^2-2O+6→Y↲
+P^3-3P^2-2P+6→Z↲
+↲
+If Y=0↲
+Then O⌟
+"est"↲
+I⌟
+"valeur"↲
+I+1→I↲
+IfEnd↲
+↲
+If YZ<0↲
+Then P⌟
+"et"↲
+O⌟
+"entre"↲
+I⌟
+"valeur"↲
+I+1→I↲
+IfEnd↲
+↲
+Next↲
+↲
+If I=0↲
+Then "Aucune valeur trouvée"↲
+IfEnd
+
+Filename:BALLE
+1→θ↲
+Prog "API"↲
+63→X↲
+21→Y↲
+While 1↲
+Cls↲
+PlotOn X,Y↲
+Getkey→G↲
+If G≠0↲
+Then If G=28↲
+Then 1→D↲
+Else If G=37↲
+Then 2→D↲
+Else If G=27↲
+Then 3→D↲
+Else If G=38↲
+Then 4→D↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+If D=1 And Y=63↲
+Then 2→D↲
+Else If D=2 And Y=1↲
+Then 1→D↲
+Else If D=3 And X=127↲
+Then 4→D↲
+Else If D=4 And X=1↲
+Then 3→D↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+If D=1↲
+Then Isz Y↲
+Else If D=2↲
+Then Dsz Y↲
+Else If D=3↲
+Then Isz X↲
+Else If D=4↲
+Then Dsz X↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+WhileEnd↲
+2→θ↲
+Prog "API"
+
+Filename:BASKET
+1→θ↲
+Prog "API"↲
+61→M↲
+65→N↲
+63→X↲
+While Z=0↲
+If I≤9↲
+Then Cls↲
+Text 1,1,I↲
+0→Y↲
+I=1⇒RanBin#(60,66)→X↲
+I=2⇒RanBin#(50,76)→X↲
+IY3⇒RanBin#(27,100)→X↲
+F-Line 42,63,42,42↲
+F-Line 84,63,84,42↲
+F-Line 42,42,84,42↲
+F-Line M,46,N,46↲
+0→G↲
+While G≠28↲
+Getkey→G↲
+While Y<46↲
+Getkey→G↲
+G=38⇒X-1→X↲
+G=27⇒X+1→X↲
+F-Line X,Y,X,Y↲
+Y+1→Y↲
+If Y=46↲
+Then If X>M And X<N↲
+Then I+1→I↲
+Else 0→I↲
+IfEnd↲
+IfEnd↲
+WhileEnd↲
+WhileEnd↲
+Else If IY10↲
+Then Cls↲
+Text 1,1,I↲
+0→Y↲
+I=1⇒RanBin#(60,66)→X↲
+I=2⇒RanBin#(50,76)→X↲
+IY3⇒RanBin#(27,100)→X↲
+F-Line 42,63,42,42↲
+F-Line 84,63,84,42↲
+F-Line 42,42,84,42↲
+F-Line M,46,N,46↲
+0→G↲
+While G≠28↲
+Getkey→G↲
+While Y<46↲
+Getkey→G↲
+G=38⇒X-1→X↲
+G=27⇒X+1→X↲
+F-Line X,Y,X,Y↲
+Y+1→Y↲
+If Y=46↲
+Then If X>M And X<N↲
+Then I+1→I↲
+Else 0→I↲
+IfEnd↲
+IfEnd↲
+If N=82↲
+Then 1→S↲
+Else If M=45↲
+Then 0→S↲
+IfEnd↲
+IfEnd↲
+If S=0↲
+Then M+1→M↲
+N+1→N↲
+Else M-1→M↲
+N-1→N↲
+IfEnd↲
+WhileEnd↲
+WhileEnd↲
+IfEnd↲
+IfEnd↲
+WhileEnd↲
+2→θ↲
+Prog "API"
+
+Filename:BOCHPART
+If θ≠42↲
+Then "A"?→A:"B"?→B↲
+"C"?→C:"D"?→D:"M"?→M↲
+IfEnd↲
+0→θ↲
+↲
+2→U↲
+For 1→N To M↲
+U+3*4^(N-1)→U↲
+Next↲
+↲
+U→Dim List 2↲
+U→Dim List 3↲
+A→List 2[1↲
+B→List 3[1↲
+C→List 2[U↲
+D→List 3[U↲
+↲
+For 1→H To M↲
+↲
+1→P:2→Q↲
+While Q≤U↲
+↲
+If List 2[Q]≠0↲
+Then ↲
+↲
+List 2[P→A↲
+List 3[P→B↲
+List 2[Q→C↲
+List 3[Q→D↲
+↲
+Min({A,C})→Y↲
+Max({A,C})-Y→K↲
+↲
+If Y=A↲
+Then 1→Z:2→V↲
+Else 2→Z:1→V↲
+IfEnd↲
+↲
+RndFix(Y+(ZK÷3),0)→A↲
+RndFix(Y+(VK÷3),0)→C↲
+↲
+Min({B,D})→Y↲
+Max({B,D})-Y→K↲
+↲
+If Y=B↲
+Then 1→Z:2→V↲
+Else 2→Z:1→V↲
+IfEnd↲
+↲
+RndFix(Y+(ZK÷3),0)→B↲
+RndFix(Y+(VK÷3),0)→D↲
+↲
+(Q-P)(1÷4)+P→W↲
+A→List 2[W↲
+B→List 3[W↲
+(Q-P)(3÷4)+P→W↲
+C→List 2[W↲
+D→List 3[W↲
+↲
+(A+C)÷2→I↲
+(B+D)÷2→J↲
+↲
+√((A-I)²+(B-J)²)→R↲
+↲
+A-I→E↲
+B-J→F↲
+↲
+Rad↲
+cos⁻¹ (E÷R)→θ↲
+↲
+J+Rsin θ→G↲
+↲
+G≠B⇒-θ→θ↲
+↲
+-π÷2+θ→θ↲
+↲
+√((3÷4)(2R)²)→S↲
+↲
+RndFix(I+Scos θ,0)→Z↲
+RndFix(J+Ssin θ,0)→V↲
+↲
+(Q-P)(2÷4)+P→W↲
+Z→List 2[W↲
+V→List 3[W↲
+↲
+Q→P↲
+↲
+IfEnd↲
+Isz Q↲
+↲
+WhileEnd↲
+↲
+Next
+
+Filename:BOCHREND
+0⇒63 31 30 3 1↲
+Prog "~SETGRAP"↲
+7→Dim List 1↲
+"A"?→A:"B"?→B↲
+"R"?→R:"D"?→D↲
+"M"?→M:"E"?→E↲
+↲
+A→List 1[1↲
+B→List 1[2↲
+R→List 1[3↲
+D→List 1[4↲
+M→List 1[5↲
+E→List 1[6↲
+1→List 1[7↲
+↲
+Cls↲
+While List 1[7]<4↲
+↲
+List 1[1→A↲
+List 1[2→B↲
+List 1[3→R↲
+List 1[4→D↲
+List 1[5→M↲
+↲
+2π÷3→G↲
+↲
+List 1[7→I↲
+A+Rcos (D+GI)→J↲
+B+Rsin (D+GI)→K↲
+A+Rcos (D+G(I+1))→A↲
+B+Rsin (D+G(I+1))→B↲
+↲
+J→C:K→D↲
+↲
+RndFix(A,0→A↲
+RndFix(B,0→B↲
+RndFix(C,0→C↲
+RndFix(D,0→D↲
+↲
+42→θ↲
+Prog "BOCHPART"↲
+↲
+42→θ↲
+If List 1[6]=0↲
+Then Prog "BOCHVISU"↲
+Else Prog "BOCHVIS3"↲
+IfEnd↲
+↲
+List 1[7]+1→List 1[7]↲
+↲
+WhileEnd↲
+↲
+While Getkey=0↲
+WhileEnd↲
+↲
+Prog "~SETBACK"
+
+Filename:BOCHVIS3
+θ≠42⇒Cls↲
+0→θ↲
+↲
+Dim List 2→X↲
+↲
+63→r↲
+↲
+For 1→R To 3↲
+↲
+For 1→I To X-1↲
+↲
+List 2[I→A↲
+r-List 3[I→B↲
+List 2[I+1→C↲
+r-List 3[I+1→D↲
+↲
+F-Line A,B,C,D↲
+↲
+Next↲
+↲
+Next
+
+Filename:BOCHVISU
+θ≠42⇒Cls↲
+0→θ↲
+↲
+Dim List 2→X↲
+63→r↲
+↲
+For 1→I To X↲
+↲
+PlotOn List 2[I,r-List 3[I↲
+↲
+Next
+
+Filename:BRUTEFOR
+0→A↲
+For -75→N To 75↲
+↲
+If 1↲
+Then ↲
+↲
+If Frac ((2N+5)÷(-7»2))=0↲
+Then A Rmdr 7→X↲
+Locate 1+3X,(A-X)÷7+1,N↲
+Isz A↲
+IfEnd↲
+↲
+IfEnd↲
+↲
+Next:While Getkey=0↲
+WhileEnd
+
+Filename:BUGGRAPH
+2→θ↲
+Prog "API"
+
+Filename:BUGS
+Cls↲
+0→X~Y↲
+PlotOn 1,1↲
+↲
+0⇒No render good coo↲
+PlotOn 1+X,2↲
+↲
+0⇒This render disablle the next↲
+PlotOn 5X,5Y↲
+↲
+0⇒Patch plot smthing↲
+↲
+PlotOn 8X+32,8Y+3
+
+Filename:CADENA
+1→θ↲
+Prog "API"↲
+30→S↲
+Text 24,14,A↲
+Text 30,14,B↲
+Text 36,14,D↲
+RanBin#(0,9)→M↲
+RanBin#(0,9)→N↲
+RanBin#(0,9)→O↲
+F-Line 10,22,10,42↲
+F-Line 30,22,30,42↲
+F-Line 10,42,30,42↲
+F-Line 10,22,30,22↲
+F-Line 22,42,22,46↲
+F-Line 26,42,26,46↲
+F-Line 22,46,26,46↲
+While Z=0 And SY1↲
+ClrText↲
+Getkey≠0 Or S=0⇒Text 24,14,A↲
+Getkey≠0 Or S=0⇒Text 30,14,B↲
+Getkey≠0 Or S=0⇒Text 36,14,D↲
+Getkey=38 And CY1⇒C-1→C↲
+Getkey=27 And C≤1⇒C+1→C↲
+C≠0⇒Text 24,6,"#E5DD"↲
+C≠1⇒Text 30,6,"#E5DD"↲
+C≠2⇒Text 36,6,"#E5DD"↲
+Getkey≠0 Or S=0⇒Text 24+C*6,6,"O"↲
+Getkey=28 And A≤8 And C=0 And A≠M⇒A+1→A↲
+Getkey=37 And AY1 And C=0 And A≠M⇒A-1→A↲
+Getkey=28 And B≤8 And C=1 And B≠N⇒B+1→B↲
+Getkey=37 And BY1 And C=1 And B≠N⇒B-1→B↲
+Getkey=28 And D≤8 And C=2 And D≠O⇒D+1→D↲
+Getkey=37 And DY1 And C=2 And D≠O⇒D-1→D↲
+Getkey=79 And A=M⇒1→J↲
+Getkey=79 And B=N⇒1→K↲
+Getkey=79 And D=O⇒1→L↲
+1=J And 1=K And 1=L⇒1→Z↲
+1=J⇒Text 24,20,"*"↲
+1=K⇒Text 30,20,"*"↲
+1=L⇒Text 36,20,"*"↲
+S-1→S↲
+Text 1,80,S↲
+WhileEnd↲
+If SY1↲
+Then Text 30,60,"C'est gagne ·!·"↲
+Else Text 30,60,"Score nul"↲
+IfEnd↲
+2→θ↲
+Prog "API"
+
+Filename:CHRONOME
+0→X↲
+While 1↲
+Locate 1,1,X↲
+X+0.022→X↲
+WhileEnd
+
+Filename:CLARA
+ClrMat M↲
+{3,3}→Dim Mat M↲
+1→θ↲
+Prog "API"↲
+1→P↲
+F-Line 15,56,15,18↲
+F-Line 27,56,27,18↲
+F-Line 7,28,35,28↲
+F-Line 7,44,35,44↲
+While M=0↲
+Getkey→G↲
+If G=37 And Y<2 Or G=28 And Y>0 Or G=38 And X>0 Or G=27 And X<2↲
+Then Text 13(Y+1),10(X+1)-1," "↲
+If G=37↲
+Then Y+1→Y↲
+Else If G=28↲
+Then Y-1→Y↲
+Else If G=38↲
+Then X-1→X↲
+Else If G=27↲
+Then X+1→X↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Text 13(Y+1),10(X+1)-1,"■"↲
+Else If G=31 And Mat M[X+1,Y+1]=0↲
+Then P→Mat M[X+1,Y+1]↲
+If P=1↲
+Then Text 13(Y+1),10(X+1)-1,"X"↲
+2→P↲
+Else Text 13(Y+1),10(X+1)-1,"O"↲
+1→P↲
+IfEnd↲
+For 0→T To 250↲
+Next↲
+IfEnd↲
+IfEnd↲
+WhileEnd
+
+Filename:CLIQUES
+0→A~G↲
+While G≠79↲
+If Getkey≠G↲
+Then Getkey→G↲
+A+1→A↲
+Locate 1,1,A↲
+IfEnd↲
+WhileEnd
+
+Filename:CODE
+r=1⇒Goto 1↲
+r=2⇒Goto 2↲
+↲
+Lbl 1↲
+A=76⇒1→X↲
+A=66⇒2→X↲
+A=56⇒3→X↲
+A=46⇒4→X↲
+A=36⇒5→X↲
+A=26⇒6→X↲
+A=75⇒7→X↲
+A=65⇒8→X↲
+A=55⇒9→X↲
+A=45⇒10→X↲
+A=35⇒11→X↲
+A=25⇒12→X↲
+A=74⇒13→X↲
+A=64⇒14→X↲
+A=54⇒15→X↲
+A=73⇒16→X↲
+A=63⇒17→X↲
+A=53⇒18→X↲
+A=43⇒19→X↲
+A=33⇒20→X↲
+A=72⇒21→X↲
+A=62⇒22→X↲
+A=52⇒23→X↲
+A=42⇒24→X↲
+A=32⇒25→X↲
+A=71⇒26→X↲
+Return↲
+↲
+Lbl 2↲
+C=1⇒"A"→Str 3↲
+C=2⇒"B"→Str 3↲
+C=3⇒"C"→Str 3↲
+C=4⇒"D"→Str 3↲
+C=5⇒"E"→Str 3↲
+C=6⇒"F"→Str 3↲
+C=7⇒"G"→Str 3↲
+C=8⇒"H"→Str 3↲
+C=9⇒"I"→Str 3↲
+C=10⇒"J"→Str 3↲
+C=11⇒"K"→Str 3↲
+C=12⇒"L"→Str 3↲
+C=13⇒"M"→Str 3↲
+C=14⇒"N"→Str 3↲
+C=15⇒"O"→Str 3↲
+C=16⇒"P"→Str 3↲
+C=17⇒"Q"→Str 3↲
+C=18⇒"R"→Str 3↲
+C=19⇒"S"→Str 3↲
+C=20⇒"T"→Str 3↲
+C=21⇒"U"→Str 3↲
+C=22⇒"V"→Str 3↲
+C=23⇒"W"→Str 3↲
+C=24⇒"X"→Str 3↲
+C=25⇒"Y"→Str 3↲
+C=26⇒"Z"→Str 3
+
+Filename:COLINEAR
+"X 1":?→A↲
+"Y 1":?→B↲
+"X 2":?→C↲
+"Y 2":?→D↲
+If A÷C=B÷D↲
+Then "Colinéaires"↲
+Else "Non colinéaires"↲
+IfEnd
+
+Filename:CONFIANC
+ClrText↲
+"Echantillon":?→N↲
+"Pourcunage":?→P↲
+ClrText↲
+Locate 1,1,P-(1÷√N)↲
+Locate 1,2,P+(1÷√N)
+
+Filename:CONVERT
+3.6[km/h]Conv[m/s]
+
+Filename:CRASH
+1→θ↲
+Prog "API"↲
+50→X↲
+25→Y↲
+F-Line X-2,Y+2,X-2,Y+5↲
+F-Line X,Y+2,X,Y+5↲
+F-Line X+1,Y+1,X+1,Y+1↲
+F-Line X+1,Y+6,X+1,Y+6↲
+F-Line X+2,Y+7,X+2,Y+7↲
+F-Line X+3,Y+7,X+3,Y+7↲
+F-Line X+4,Y+7,X+4,Y+7↲
+F-Line X+5,Y+6,X+5,Y+6↲
+F-Line X+6,Y+5,X+6,Y+5↲
+F-Line X+6,Y+4,X+6,Y+4↲
+F-Line X+6,Y+3,X+6,Y+3↲
+F-Line X+6,Y+2,X+6,Y+2↲
+F-Line X+5,Y+1,X+5,Y+1↲
+F-Line X+2,Y,X+4,Y↲
+F-Line X+2,Y+2,X+2,Y+5↲
+F-Line X+3,Y+5,X+4,Y+4↲
+F-Line X+3,Y+3,X+4,Y+2
+
+Filename:CRYPT
+Cls↲
+1→E↲
+While 1↲
+For 1→I To 100↲
+Next↲
+Do↲
+Getkey↲
+LpWhile Not Ans↲
+Ans→A↲
+1→r↲
+Prog "CODE"↲
+X→C↲
+2→r↲
+Prog "CODE"↲
+Text 1,E,Str 3↲
+MOD(3X+7,26)→C↲
+2→r↲
+Prog "CODE"↲
+Text 25,E,Str 3↲
+If E>120↲
+Then Cls↲
+1→E↲
+Else ↲
+E+5→E↲
+IfEnd↲
+WhileEnd
+
+Filename:DECOMPRJ
+?→N↲
+↲
+For 2→I To N↲
+↲
+0→O↲
+N→M↲
+↲
+While M÷I=Int (M÷I)↲
+↲
+Isz O↲
+N÷I→N↲
+M÷I→M↲
+↲
+WhileEnd↲
+↲
+O≠0⇒{O,I}⌟
+↲
+IfEnd↲
+↲
+Next
+
+Filename:DECRYPT
+Cls↲
+1→E↲
+While 1↲
+For 1→I To 100↲
+Next↲
+Do↲
+Getkey↲
+LpWhile Not Ans↲
+Ans→A↲
+1→r↲
+Prog "CODE"↲
+X→C↲
+2→r↲
+Prog "CODE"↲
+Text 1,E,Str 3↲
+MOD(9X+15,26)→C↲
+2→r↲
+Prog "CODE"↲
+Text 25,E,Str 3↲
+If E>120↲
+Then Cls↲
+1→E↲
+Else ↲
+E+5→E↲
+IfEnd↲
+WhileEnd
+
+Filename:DEPOWER
+0→I↲
+?→A:?→B↲
+ClrText↲
+While 1↲
+Locate 1,1,I↲
+A^I Rmdr B↲
+Isz I↲
+WhileEnd
+
+Filename:DICOTOM0
+"A":?→A↲
+"B":?→B↲
+While B-A>10^-12↲
+(A+B)÷2→M↲
+If (M^3+2M-2)*(A^3+2A-2)>0↲
+Then M→A↲
+Else M→B↲
+IfEnd↲
+WhileEnd
+
+Filename:DICOTOM1
+"A":?→A↲
+"B":?→B↲
+0→C↲
+"Itérations":?→I↲
+While C<I↲
+C+1→C↲
+(A+B)÷2→M↲
+If (M^3+2M-2)*(A^3+2A-2)>0↲
+Then M→A↲
+Else M→B↲
+IfEnd↲
+WhileEnd
+
+Filename:DIV
+?→A:?→B↲
+↲
+Intg (A÷B)→C↲
+↲
+If B>0 Or C=A÷B↲
+Then C→Q↲
+Else C+1→Q↲
+IfEnd↲
+↲
+A-BQ→R↲
+Q⌟
+R
+
+Filename:DIVEUCLI
+"Division euclidienne de:":?→A↲
+"par:":?→B↲
+"Quotient:"↲
+((A-A Rmdr B)÷B)⌟
+"Reste:"↲
+A Rmdr B⌟
+
+Filename:DIVISION
+0→A~Z↲
+"Division de":?→N:"Par":?→D↲
+N→A↲
+While AYD↲
+A-D→A↲
+Isz Q↲
+A→R↲
+WhileEnd↲
+A→R↲
+ClrText↲
+Locate 1,1,"Reste"↲
+Locate 7,1,R↲
+If R≠0↲
+Then Locate 1,2,"Quotient (déf)"↲
+Locate 16,2,Q↲
+Locate 1,3,"Quotient (ex)"↲
+Locate 15,3,Q↲
+Q→r↲
+3→θ↲
+Prog "API"↲
+Locate 15+θ,3,"."↲
+For 16+θ→I To 22↲
+10R→R↲
+0→r↲
+While RYD↲
+R-D→R↲
+Isz r↲
+WhileEnd↲
+If I≠21↲
+Then If I≠22↲
+Then Locate I,3,r↲
+Else rY5⇒Isz θ↲
+Locate 21,3,θ↲
+IfEnd↲
+Else r→θ↲
+IfEnd↲
+R=0⇒Return↲
+Next↲
+Else Locate 1,2,"Quotient"↲
+Locate 10,2,Q↲
+IfEnd
+
+Filename:DIVISORS
+?→X↲
+For 1→I To X↲
+Frac (X÷I)=0⇒I⌟
+Next
+
+Filename:ECHEQUES
+1→θ↲
+Prog "API"↲
+↲
+For 1→I To 65 Step 8↲
+Vertical I+30↲
+F-Line 31,I,95,I↲
+Next↲
+↲
+ClrMat A↲
+{8,8}→Dim Mat A↲
+1→r↲
+0⇒1→P 2→T 3→C 4→F 5→Q 6→R↲
+For 1→Y To 8 Step 7↲
+Y=8⇒-1→r↲
+2r→Mat A[Y,1]↲
+2r→Mat A[Y,8]↲
+3r→Mat A[Y,2]↲
+3r→Mat A[Y,7]↲
+4r→Mat A[Y,3]↲
+4r→Mat A[Y,6]↲
+5r→Mat A[Y,4]↲
+6r→Mat A[Y,5]↲
+Next↲
+↲
+1→r↲
+For 2→Y To 7 Step 5↲
+Y=7⇒-1→r↲
+For 1→I To 8↲
+r→Mat A[Y,I]↲
+Next↲
+Next↲
+↲
+For 1→Y To 8 Step 7↲
+For 1→X To 8↲
+Y-1→r↲
+X-1→θ↲
+1→W↲
+Mat A[Y,X]→Z↲
+↲
+If Z<0↲
+Then 1→V↲
+-Z→Z↲
+35+8r→H↲
+1+8θ→I↲
+PlotOff H,I↲
+↲
+IfEnd↲
+↲
+1+8r→r↲
+34+8θ→θ↲
+↲
+If Z=1↲
+Then Text r,θ,"P"↲
+Else If Z=2↲
+Then Text r,θ,"T"↲
+Else If Z=3↲
+Then Text r,θ,"C"↲
+Else If Z=4↲
+Then Text r,θ,"F"↲
+Else If Z=5↲
+Then Text r,θ-1,"Q"↲
+Else If Z=6↲
+Then Text r,θ,"R"↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+↲
+↲
+V⇒-Z→Z↲
+↲
+Next↲
+Next↲
+For 2→Y To 7 Step 5↲
+For 1→X To 8↲
+Y→r↲
+X→θ↲
+1→W↲
+Mat A[Y,X]→Z↲
+↲
+If Z<0↲
+Then 1→V↲
+-Z→Z↲
+↲
+PlotChg 1,1↲
+PlotChg 35+8(r-1),1+8(θ-1)↲
+PlotChg 1,1↲
+PlotChg 35+8(r-1),9+8(θ-1)↲
+PlotChg 1,1↲
+PlotChg 31+8(r-1),5+8(θ-1)↲
+PlotChg 1,1↲
+PlotChg 39+8(r-1),5+8(θ-1)↲
+PlotChg 1,1↲
+↲
+IfEnd↲
+1+8(r-1)→r↲
+34+8(θ-1)→θ↲
+If Z=1↲
+Then Text r,θ,"P"↲
+Else If Z=2↲
+Then Text r,θ,"T"↲
+Else If Z=3↲
+Then Text r,θ,"C"↲
+Else If Z=4↲
+Then Text r,θ,"F"↲
+Else If Z=5↲
+Then Text r,θ-1,"Q"↲
+Else If Z=6↲
+Then Text r,θ,"R"↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+V⇒-Z→Z↲
+↲
+Next↲
+Next↲
+↲
+While D=0↲
+Getkey→G↲
+If G≠0↲
+Then If G=31↲
+Then ↲
+Else If G=28↲
+Then ↲
+Else If G=27↲
+Then ↲
+Else If G=37↲
+Then ↲
+Else If G=38↲
+Then ↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+WhileEnd
+
+Filename:EQUIVALE
+"Test sur 2 ou 3 Y":?→A↲
+If A=2↲
+Then "Y1 et Y2 sont:"↲
+If Y1=Y2↲
+Then "Équivalentes"↲
+Else "Non équivalentes"↲
+IfEnd↲
+Else If A=3↲
+Then "Y1, Y2 et Y3 sont:"↲
+If Y1=Y2=Y3↲
+Then "Équivalentes"↲
+Else "Non équivalentes"↲
+IfEnd↲
+IfEnd↲
+IfEnd
+
+Filename:FLAPPY
+1→θ↲
+Prog "API"↲
+63→X↲
+30→D↲
+RanBin#(1,20)→A↲
+RanBin#(43,63)→B↲
+F-Line X,63,X,B↲
+F-Line X,1,X,A↲
+While G=0↲
+Getkey→G↲
+WhileEnd↲
+0→G↲
+While M=0↲
+F-Line C,D,C,D↲
+C=63 And D≤A⇒1→M↲
+C=63 And DYB⇒1→M↲
+If Getkey≠G↲
+Then Getkey→G↲
+D+3→D↲
+IfEnd↲
+D-1→D↲
+D≤0⇒1→M↲
+C+1→C↲
+If CY127↲
+Then P+1→P↲
+1→C↲
+Cls↲
+RanBin#(1,20)→A↲
+A+P→A↲
+RanBin#(43,63)→B↲
+B-P→B↲
+F-Line X,63,X,B↲
+F-Line X,1,X,A↲
+30→D↲
+IfEnd↲
+WhileEnd↲
+2→θ↲
+Prog "API"↲
+P
+
+Filename:GEOGEBRA
+1→θ↲
+Prog "API"↲
+2→θ↲
+Prog "API"
+
+Filename:GRAVITAT
+"Masse (kg)":?→M↲
+"Distance (m)":?→D↲
+6.67*10^-11→G↲
+5.9736*10^24→T↲
+GTM÷D²
+
+Filename:I LOVE U
+1→θ↲
+Prog "API"↲
+63→X↲
+21→Y↲
+While 1↲
+ClrText↲
+Text X,Y,"Message"↲
+Getkey→G↲
+If G≠0↲
+Then If G=28↲
+Then 1→D↲
+Else If G=37↲
+Then 2→D↲
+Else If G=27↲
+Then 3→D↲
+Else If G=38↲
+Then 4→D↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+If D=1 And Y=63↲
+Then 2→D↲
+Else If D=2 And Y=1↲
+Then 1→D↲
+Else If D=3 And X=127↲
+Then 4→D↲
+Else If D=4 And X=1↲
+Then 3→D↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+If D=1↲
+Then Isz Y↲
+Else If D=2↲
+Then Dsz Y↲
+Else If D=3↲
+Then Isz X↲
+Else If D=4↲
+Then Dsz X↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+WhileEnd↲
+2→θ↲
+Prog "API"
+
+Filename:IMC
+Cls↲
+"Votre taille (en m)"↲
+?→T↲
+ClrText↲
+"Votre masse (en kg)"↲
+?→M↲
+ClrText↲
+M÷(T²)→I↲
+If I≤5↲
+Then "Erreur de saisie"↲
+Stop↲
+IfEnd↲
+Text 1,1,"Votre IMC est"↲
+Text 10,10,I
+
+Filename:INSTRUCT
+0→I↲
+While 1↲
+Locate 1,1,I↲
+I+1→I↲
+WhileEnd
+
+Filename:IS PRIME
+?→X↲
+0→A↲
+↲
+For 2→I To X-1↲
+Frac (X÷I)=0⇒1→A↲
+Next↲
+↲
+If A↲
+Then "Not prime"↲
+Else "Prime"↲
+IfEnd
+
+Filename:JULPRIME
+?→X↲
+2→I↲
+↲
+Do↲
+X÷I→D↲
+I+1→I↲
+LpWhile Frac (D)↲
+↲
+D
+
+Filename:KOCH
+Cls:Deg:30→A↲
+?→P:3*4^P→N↲
+0.65÷3^P→D↲
+0.15→X:0.5→Y↲
+Plot X,Y↲
+Lbl 0↲
+-2→S:P→I↲
+Lbl 1↲
+(4^I)÷2→J↲
+Frac ((N-1+J÷2)÷J)=0⇒1→S↲
+Dsz I:Goto 1↲
+X+Dcos A→X↲
+Y+1.5Dsin A→Y↲
+A+60S→A↲
+Plot X,Y:Line↲
+Dsz N:Goto 0
+
+Filename:MATRIX
+Prog "~MATRIXF"
+
+Filename:MY CHAT
+1→θ↲
+Prog "API"↲
+↲
+Text 1,1,"0123456789012345678901234567890"↲
+0⇒↲
+Locate 1,2,"012345678901234567890"
+
+Filename:MY LOVE
+0⇒     ■   ■               ■■■ ■■■               ■■■■■                 ■■■                   ■                                ↲
+1→θ↲
+Prog "API"↲
+"Lover"→Str 1↲
+126→Z↲
+63→Y↲
+6→I↲
+35→A↲
+A+46→B↲
+1.45→C↲
+15→D↲
+For 0→X To D↲
+F-Line A-CX,Y-X,A+I+CX,Y-X↲
+F-Line B-CX,Y-X,B+I+CX,Y-X↲
+Next↲
+For 0→X To Y-D↲
+F-Line A-CD+X,Y-X-D,B+I+CD-X,Y-X-D↲
+Next↲
+Text D+5,(A+B)÷2-StrLen(Str 1),Str 1
+
+Filename:N-LETTER
+1→A↲
+2→B↲
+3→C↲
+4→D↲
+5→E↲
+6→F↲
+7→G↲
+8→H↲
+9→I↲
+10→J↲
+11→K↲
+12→L↲
+13→M↲
+14→N↲
+15→O↲
+16→P↲
+17→Q↲
+18→R↲
+19→S↲
+20→T↲
+21→U↲
+22→V↲
+23→W↲
+24→X↲
+25→Y↲
+26→Z↲
+?→r↲
+
+Filename:ND DEGRE
+"a:":?→A↲
+"b:":?→B↲
+"c:":?→C↲
+ClrText↲
+Locate 1,1,"Y ="↲
+Locate 5,1,A↲
+If BY0↲
+Then Locate 7,1,"X² +"↲
+Locate 12,1,B↲
+Else Locate 7,1,"X² -"↲
+Locate 12,1,-B↲
+IfEnd↲
+If CY0↲
+Then Locate 14,1,"+"↲
+Locate 16,1,C↲
+Else Locate 14,1,"-"↲
+Locate 16,1,-C↲
+IfEnd↲
+Locate 1,2,"A:"↲
+Locate 3,2,A↲
+Locate 1,3,"B:"↲
+Locate 3,3,B↲
+Locate 1,4,"C:"↲
+Locate 3,4,C↲
+Locate 1,5,"Sdv:"↲
+If A>0↲
+Then Locate 5,5,"↘ ↗"↲
+Else Locate 5,5,"↗ ↘"↲
+IfEnd↲
+Locate 1,6,"Sommet et α:"↲
+-B÷2A→P↲
+Locate 13,6,P↲
+Locate 1,7,"Δ:"↲
+B²-4AC→D↲
+Locate 11,7,"β:"↲
+Locate 3,7,D↲
+Locate 13,7,-D÷4A↲
+If D<0↲
+Then Locate 13,3,"R(0)"↲
+Else If D=0↲
+Then Locate 13,3,"R(1):"↲
+Locate 13,4,P↲
+Else If D>0↲
+Then Locate 13,3,"R(2):"↲
+Locate 13,4,(-B-√D)÷2A↲
+Locate 13,5,(-B+√D)÷2A↲
+IfEnd↲
+IfEnd
+
+Filename:PENDU
+1→θ↲
+Prog "API"↲
+ClrList6↲
+0→List 6[1]↲
+ClrList5↲
+ClrList4↲
+1→Q↲
+1→r↲
+0→θ↲
+1→X↲
+Text 1,1,"Nom:"↲
+While G≠31↲
+Getkey→G↲
+If G=61↲
+Then Text 10,6X+1,"_"↲
+-1→List 5[X]↲
+X+1→X↲
+Else If G=76↲
+Then Text 10,6X+1,"A"↲
+1→List 5[X]↲
+X+1→X↲
+Else If G=66↲
+Then Text 10,6X+1,"B"↲
+2→List 5[X]↲
+X+1→X↲
+Else If G=56↲
+Then Text 10,6X+1,"C"↲
+3→List 5[X]↲
+X+1→X↲
+Else If G=46↲
+Then Text 10,6X+1,"D"↲
+4→List 5[X]↲
+X+1→X↲
+Else If G=36↲
+Then Text 10,6X+1,"E"↲
+5→List 5[X]↲
+X+1→X↲
+Else If G=26↲
+Then Text 10,6X+1,"F"↲
+6→List 5[X]↲
+X+1→X↲
+Else If G=75↲
+Then Text 10,6X+1,"G"↲
+7→List 5[X]↲
+X+1→X↲
+Else If G=65↲
+Then Text 10,6X+1,"H"↲
+8→List 5[X]↲
+X+1→X↲
+Else If G=55↲
+Then Text 10,6X+1,"I"↲
+9→List 5[X]↲
+X+1→X↲
+Else If G=45↲
+Then Text 10,6X+1,"J"↲
+10→List 5[X]↲
+X+1→X↲
+Else If G=35↲
+Then Text 10,6X+1,"K"↲
+11→List 5[X]↲
+X+1→X↲
+Else If G=25↲
+Then Text 10,6X+1,"L"↲
+12→List 5[X]↲
+X+1→X↲
+Else If G=74↲
+Then Text 10,6X+1,"M"↲
+13→List 5[X]↲
+X+1→X↲
+Else If G=64↲
+Then Text 10,6X+1,"N"↲
+14→List 5[X]↲
+X+1→X↲
+Else If G=54↲
+Then Text 10,6X+1,"O"↲
+15→List 5[X]↲
+X+1→X↲
+Else If G=73↲
+Then Text 10,6X+1,"P"↲
+16→List 5[X]↲
+X+1→X↲
+Else If G=63↲
+Then Text 10,6X+1,"Q"↲
+63→List 5[X]↲
+X+1→X↲
+Else If G=53↲
+Then Text 10,6X+1,"R"↲
+18→List 5[X]↲
+X+1→X↲
+Else If G=43↲
+Then Text 10,6X+1,"S"↲
+19→List 5[X]↲
+X+1→X↲
+Else If G=33↲
+Then Text 10,6X+1,"T"↲
+20→List 5[X]↲
+X+1→X↲
+Else If G=72↲
+Then Text 10,6X+1,"U"↲
+21→List 5[X]↲
+X+1→X↲
+Else If G=62↲
+Then Text 10,6X+1,"V"↲
+22→List 5[X]↲
+X+1→X↲
+Else If G=52↲
+Then Text 10,6X+1,"W"↲
+23→List 5[X]↲
+X+1→X↲
+Else If G=42↲
+Then Text 10,6X+1,"X"↲
+24→List 5[X]↲
+X+1→X↲
+Else If G=32↲
+Then Text 10,6X+1,"Y"↲
+25→List 5[X]↲
+X+1→X↲
+Else If G=71↲
+Then Text 10,6X+1,"Z"↲
+26→List 5[X]↲
+X+1→X↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+WhileEnd↲
+Cls↲
+ClrText↲
+For 1→I To Dim List 5↲
+Text 10,6I+1,"-"↲
+If List 5[I]=-1↲
+Then -1→List 4[I]↲
+Text 10,6I+1,"_"↲
+Else If List 5[I]≠-1↲
+Then 0→List 4[I]↲
+IfEnd↲
+IfEnd↲
+Next↲
+While M=0↲
+0→G↲
+Getkey→G↲
+If G≠0 Or r=1↲
+Then 0→θ↲
+If G=76↲
+Then 1→θ↲
+Else If G=66↲
+Then 2→θ↲
+Else If G=56↲
+Then 3→θ↲
+Else If G=46↲
+Then 4→θ↲
+Else If G=36↲
+Then 5→θ↲
+Else If G=26↲
+Then 6→θ↲
+Else If G=75↲
+Then 7→θ↲
+Else If G=65↲
+Then 8→θ↲
+Else If G=55↲
+Then 9→θ↲
+Else If G=45↲
+Then 10→θ↲
+Else If G=35↲
+Then 11→θ↲
+Else If G=25↲
+Then 12→θ↲
+Else If G=74↲
+Then 13→θ↲
+Else If G=64↲
+Then 14→θ↲
+Else If G=54↲
+Then 15→θ↲
+Else If G=73↲
+Then 16→θ↲
+Else If G=63↲
+Then 17→θ↲
+Else If G=53↲
+Then 18→θ↲
+Else If G=43↲
+Then 19→θ↲
+Else If G=33↲
+Then 20→θ↲
+Else If G=72↲
+Then 21→θ↲
+Else If G=62↲
+Then 22→θ↲
+Else If G=52↲
+Then 23→θ↲
+Else If G=42↲
+Then 24→θ↲
+Else If G=32↲
+Then 25→θ↲
+Else If G=71↲
+Then 26→θ↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+If θ≠0↲
+Then K+1→K↲
+θ→List 6[K]↲
+If θ=1↲
+Then Text 30,6K+1,"A"↲
+Else If θ=2↲
+Then Text 30,6K+1,"B"↲
+Else If θ=3↲
+Then Text 30,6K+1,"C"↲
+Else If θ=4↲
+Then Text 30,6K+1,"D"↲
+Else If θ=5↲
+Then Text 30,6K+1,"E"↲
+Else If θ=6↲
+Then Text 30,6K+1,"F"↲
+Else If θ=7↲
+Then Text 30,6K+1,"G"↲
+Else If θ=8↲
+Then Text 30,6K+1,"H"↲
+Else If θ=9↲
+Then Text 30,6K+1,"I"↲
+Else If θ=10↲
+Then Text 30,6K+1,"J"↲
+Else If θ=11↲
+Then Text 30,6K+1,"K"↲
+Else If θ=12↲
+Then Text 30,6K+1,"L"↲
+Else If θ=13↲
+Then Text 30,6K+1,"M"↲
+Else If θ=14↲
+Then Text 30,6K+1,"N"↲
+Else If θ=15↲
+Then Text 30,6K+1,"O"↲
+Else If θ=16↲
+Then Text 30,6K+1,"P"↲
+Else If θ=17↲
+Then Text 30,6K+1,"Q"↲
+Else If θ=18↲
+Then Text 30,6K+1,"R"↲
+Else If θ=19↲
+Then Text 30,6K+1,"S"↲
+Else If θ=20↲
+Then Text 30,6K+1,"T"↲
+Else If θ=21↲
+Then Text 30,6K+1,"U"↲
+Else If θ=22↲
+Then Text 30,6K+1,"V"↲
+Else If θ=23↲
+Then Text 30,6K+1,"W"↲
+Else If θ=24↲
+Then Text 30,6K+1,"X"↲
+Else If θ=25↲
+Then Text 30,6K+1,"Y"↲
+Else If θ=26↲
+Then Text 30,6K+1,"Z"↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+0→r↲
+1→F↲
+For 1→I To Dim List 5↲
+List 5[I]=θ⇒θ→List 4[I]↲
+If List 4[I]=List 5[I] And List 4[I]=0↲
+Then ↲
+Else If List 4[I]=List 5[I] And List 4[I]=-1↲
+Then ↲
+Else If List 4[I]=List 5[I] And List 4[I]=1↲
+Then Text 10,6I+1,"A"↲
+Else If List 4[I]=List 5[I] And List 4[I]=2↲
+Then Text 10,6I+1,"B"↲
+Else If List 4[I]=List 5[I] And List 4[I]=3↲
+Then Text 10,6I+1,"C"↲
+Else If List 4[I]=List 5[I] And List 4[I]=4↲
+Then Text 10,6I+1,"D"↲
+Else If List 4[I]=List 5[I] And List 4[I]=5↲
+Then Text 10,6I+1,"E"↲
+Else If List 4[I]=List 5[I] And List 4[I]=6↲
+Then Text 10,6I+1,"F"↲
+Else If List 4[I]=List 5[I] And List 4[I]=7↲
+Then Text 10,6I+1,"G"↲
+Else If List 4[I]=List 5[I] And List 4[I]=8↲
+Then Text 10,6I+1,"H"↲
+Else If List 4[I]=List 5[I] And List 4[I]=9↲
+Then Text 10,6I+1,"I"↲
+Else If List 4[I]=List 5[I] And List 4[I]=10↲
+Then Text 10,6I+1,"J"↲
+Else If List 4[I]=List 5[I] And List 4[I]=11↲
+Then Text 10,6I+1,"K"↲
+Else If List 4[I]=List 5[I] And List 4[I]=12↲
+Then Text 10,6I+1,"L"↲
+Else If List 4[I]=List 5[I] And List 4[I]=13↲
+Then Text 10,6I+1,"M"↲
+Else If List 4[I]=List 5[I] And List 4[I]=14↲
+Then Text 10,6I+1,"N"↲
+Else If List 4[I]=List 5[I] And List 4[I]=15↲
+Then Text 10,6I+1,"O"↲
+Else If List 4[I]=List 5[I] And List 4[I]=16↲
+Then Text 10,6I+1,"P"↲
+Else If List 4[I]=List 5[I] And List 4[I]=17↲
+Then Text 10,6I+1,"Q"↲
+Else If List 4[I]=List 5[I] And List 4[I]=18↲
+Then Text 10,6I+1,"R"↲
+Else If List 4[I]=List 5[I] And List 4[I]=19↲
+Then Text 10,6I+1,"S"↲
+Else If List 4[I]=List 5[I] And List 4[I]=20↲
+Then Text 10,6I+1,"T"↲
+Else If List 4[I]=List 5[I] And List 4[I]=21↲
+Then Text 10,6I+1,"U"↲
+Else If List 4[I]=List 5[I] And List 4[I]=22↲
+Then Text 10,6I+1,"V"↲
+Else If List 4[I]=List 5[I] And List 4[I]=23↲
+Then Text 10,6I+1,"W"↲
+Else If List 4[I]=List 5[I] And List 4[I]=24↲
+Then Text 10,6I+1,"X"↲
+Else If List 4[I]=List 5[I] And List 4[I]=25↲
+Then Text 10,6I+1,"Y"↲
+Else If List 4[I]=List 5[I] And List 4[I]=26↲
+Then Text 10,6I+1,"Z"↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+List 4[I]≠List 5[I]⇒0→F↲
+Next↲
+F=1⇒Break↲
+IfEnd↲
+WhileEnd↲
+ClrText↲
+Cls↲
+2→θ↲
+Prog "API"↲
+"End of the game"
+
+Filename:PGCD
+"Saisir a:":?→A↲
+"Saisir b:":?→B↲
+While A Rmdr B≠0↲
+A Rmdr B→R↲
+B→A↲
+R→B↲
+WhileEnd↲
+"Le PGCD est:":B
+
+Filename:PI
+1→A~B↲
+While 1↲
+If A<0↲
+Then -A+2→A↲
+Else -A-2→A↲
+IfEnd↲
+1÷A+B→B↲
+Locate 1,1,4B↲
+WhileEnd
+
+Filename:PREMIERS
+List 5[Dim List 5]→I↲
+I→B↲
+While 1↲
+Isz I↲
+Locate 1,1,I↲
+0→A↲
+For 2→Y To I-1↲
+Frac (I÷Y)=0⇒1→A↲
+Next↲
+If A=0↲
+Then I→List 5[B]↲
+Isz B↲
+IfEnd↲
+WhileEnd
+
+Filename:RACINE 2
+1→A↲
+2→B↲
+While B-A>10^-5↲
+(A+B)÷2→X↲
+If X²>2↲
+Then X→B↲
+Else X→A↲
+IfEnd↲
+WhileEnd↲
+Locate 1,1,A↲
+Locate 1,2,B
+
+Filename:S1P14
+?→X↲
+0→M↲
+For 2→I To X↲
+Frac (X÷I)=0⇒Isz M↲
+Next↲
+If Frac (M÷2)=0↲
+Then "Allumée"↲
+Else "Éteinte"↲
+IfEnd
+
+Filename:SDV
+"Borne a":?→A↲
+"Borne b":?→B↲
+"Précision (entier Y 100)":?→N↲
+↲
+(B-A)÷N→E↲
+0→I↲
+↲
+For 0→K To N-2↲
+↲
+A+KE→O↲
+A+(K+1)E→P↲
+A+(K+2)E→Q↲
+↲
+O²-O+1→X↲
+P²-P+1→Y↲
+Q²-Q+1→Z↲
+↲
+If (Y>X And Z<Y) Or (Y<X And Z>Y)↲
+Then "SDV modifié entre"↲
+P⌟
+"et"↲
+Q⌟
+I+1→I↲
+IfEnd↲
+↲
+Next↲
+↲
+If I=0↲
+Then "Aucun changement de sdv trouvée"↲
+IfEnd
+
+Filename:SETUPTIM
+ClrMat T↲
+{1,4}→Dim Mat T↲
+3→Mat T[1,1]↲
+28→Mat T[1,2]↲
+9→Mat T[1,3]↲
+2016→Mat T[1,4]
+
+Filename:SNAKE
+If Dim List 1≠9↲
+Then For 1→X To 26↲
+For 1→Y To 9↲
+0→List X[Y]↲
+Next↲
+Next↲
+IfEnd↲
+1→Z↲
+1→X↲
+ClrList1↲
+While X≤9↲
+0→List Z[X]↲
+X+1→X↲
+WhileEnd↲
+1→A↲
+2→B↲
+3→C↲
+4→D↲
+5→E↲
+6→F↲
+7→G↲
+8→H↲
+9→I↲
+10→J↲
+11→K↲
+12→L↲
+13→M↲
+14→N↲
+15→O↲
+16→P↲
+17→Q↲
+18→R↲
+19→S↲
+20→T↲
+21→U↲
+22→V↲
+23→W↲
+24→X↲
+25→Y↲
+26→Z↲
+0→r↲
+1→θ↲
+ClrText↲
+"Pseudo"↲
+While G≠61 And Dim List 1=9↲
+Getkey→G↲
+G=76⇒1→r↲
+G=76⇒Locate θ,2,"A"↲
+G=66⇒2→r↲
+G=66⇒Locate θ,2,"B"↲
+G=56⇒3→r↲
+G=56⇒Locate θ,2,"C"↲
+G=46⇒4→r↲
+G=46⇒Locate θ,2,"D"↲
+G=36⇒5→r↲
+G=36⇒Locate θ,2,"E"↲
+G=26⇒6→r↲
+G=26⇒Locate θ,2,"F"↲
+G=75⇒7→r↲
+G=75⇒Locate θ,2,"G"↲
+G=65⇒8→r↲
+G=65⇒Locate θ,2,"H"↲
+G=55⇒9→r↲
+G=55⇒Locate θ,2,"I"↲
+G=45⇒10→r↲
+G=45⇒Locate θ,2,"J"↲
+G=35⇒11→r↲
+G=35⇒Locate θ,2,"K"↲
+G=25⇒12→r↲
+G=25⇒Locate θ,2,"L"↲
+G=74⇒13→r↲
+G=74⇒Locate θ,2,"M"↲
+G=64⇒14→r↲
+G=64⇒Locate θ,2,"N"↲
+G=54⇒15→r↲
+G=54⇒Locate θ,2,"O"↲
+G=73⇒16→r↲
+G=73⇒Locate θ,2,"P"↲
+G=63⇒17→r↲
+G=63⇒Locate θ,2,"Q"↲
+G=53⇒18→r↲
+G=53⇒Locate θ,2,"R"↲
+G=43⇒19→r↲
+G=43⇒Locate θ,2,"S"↲
+G=33⇒20→r↲
+G=33⇒Locate θ,2,"T"↲
+G=72⇒21→r↲
+G=72⇒Locate θ,2,"U"↲
+G=62⇒22→r↲
+G=62⇒Locate θ,2,"V"↲
+G=52⇒23→r↲
+G=52⇒Locate θ,2,"W"↲
+G=42⇒24→r↲
+G=42⇒Locate θ,2,"X"↲
+G=32⇒25→r↲
+G=32⇒Locate θ,2,"Y"↲
+G=71⇒26→r↲
+G=71⇒Locate θ,2,"Z"↲
+r≠0⇒r→List 1[θ+1]↲
+r≠0⇒θ+1→θ↲
+r≠0⇒0→r↲
+WhileEnd↲
+0→A~Z↲
+0→r↲
+0→θ↲
+{7,21}→Dim Mat A↲
+ClrText↲
+1→E↲
+If θ=3 And 1=2↲
+Then Locate 4,1," NUL."↲
+LpWhile Ans≠31↲
+ClrText↲
+1→U~V↲
+147→R↲
+Do↲
+U→C↲
+V→D↲
+K=37⇒Isz D↲
+K=38⇒Dsz C↲
+K=28⇒Dsz D↲
+K=27⇒Isz C↲
+C=0⇒21→C↲
+C=22⇒1→C↲
+D=0⇒7→D↲
+D=8⇒1→D↲
+Locate U,V," "↲
+2=Mat A[V,U⇒Locate U,V,"●"↲
+Locate C,D,"+"↲
+C→U↲
+D→V↲
+If K=79 Or K=69↲
+Then If K=79↲
+Then 3=Mat A[D,C⇒Isz R↲
+0→Mat A[D,C↲
+Locate ²C,D," "↲
+Else 0=Mat A[D,C⇒R-1→R↲
+2→Mat A[D,C↲
+Locate C,D,"●"↲
+IfEnd↲
+Locate C,D,"+"↲
+IfEnd↲
+Do↲
+0→K↲
+Getkey→K↲
+LpWhile 0=K↲
+LpWhile K≠31↲
+Locate U,V," "↲
+2=Mat A[V,U⇒Locate U,V,"#"↲
+Mat A→Mat C↲
+IfEnd↲
+Do↲
+{2,5}→Dim Mat B↲
+θ≠3⇒Fill(0,Mat A)↲
+1→X~Y↲
+6→G↲
+2→H↲
+θ=3⇒7→G↲
+θ=3⇒1→H↲
+θ≠3⇒ClrText↲
+If r↲
+Then ClrText↲
+Locate 4,4,"---NIVEAU  ---"↲
+Locate 14,4,r-1↲
+For 1→J To 200↲
+Next↲
+ClrText↲
+r=1⇒71→F↲
+r=2⇒72→F↲
+r=3⇒62→F↲
+r=4⇒52→F↲
+r=5⇒73→F↲
+r=6⇒63→F↲
+r=7⇒53→F↲
+r=8⇒74→F↲
+r=9⇒64→F↲
+r=10⇒54→F↲
+Isz r↲
+r=12⇒π→r↲
+IfEnd↲
+If F=71↲
+Then 2→X~Y↲
+5→G↲
+3→H↲
+95→R↲
+For 1→J To 7↲
+If J=1 Or J=7↲
+Then Locate 1,J,"●●●●●●●●●●●●●●●●●●●●●●"↲
+For 1→I To 21↲
+2→Mat A[J,I↲
+Next↲
+Else Locate 1,J,".                   ."↲
+Locate 9,4,"C0LINE"↲
+↲
+2→Mat A[J,1↲
+2→Mat A[J,21↲
+IfEnd↲
+Next↲
+IfEnd↲
+If F And F≠71↲
+Then ClrText↲
+If F=69↲
+Then Mat C→Mat A↲
+For 1→I To 7↲
+For 1→J To 21↲
+2=Mat A[I,J⇒Locate J,I,"●"↲
+Next↲
+Next↲
+IfEnd↲
+If F=72↲
+Then 122→R↲
+For 2→J To 6↲
+Locate 3,J,"●"↲
+Locate 19,J,"●"↲
+2→Mat A[J,3↲
+2→Mat A[J,19↲
+Next↲
+Locate 4,4,"..............."↲
+For 4→J To 18↲
+2→Mat A[4,J↲
+Next↲
+IfEnd↲
+IfEnd↲
+If F=62↲
+Then 123→R↲
+For 2→J To 6↲
+Locate 10,J,"●"↲
+Locate 12,J,"●"↲
+2→Mat A[J,10↲
+2→Mat A[J,12↲
+Next↲
+Locate 3,4,"................"↲
+For 3→J To 19↲
+2→Mat A[4,J↲
+Next↲
+0→Mat A[4,11↲
+Locate 11,4," "↲
+IfEnd↲
+If F=52↲
+Then 107→R↲
+Locate 2,6,"................"↲
+Locate 5,2,"................"↲
+For 2→J To 17↲
+2→Mat A[6,J↲
+2→Mat A[2,J+3↲
+Next↲
+For 2→J To 6↲
+Locate 2,J,"●"↲
+Locate 20,J,"●"↲
+2→Mat A[J,2↲
+2→Mat A[J,20↲
+Next↲
+IfEnd↲
+If F=73↲
+Then 103→R↲
+For 2→J To 6↲
+Locate 9,J,"●"↲
+Locate 13,J,"●"↲
+2→Mat A[J,9↲
+2→Mat A[J,13↲
+Next↲
+Locate 3,2,"................."↲
+Locate 3,6,"................."↲
+Locate 10,2,"   "↲
+Locate 10,6,"   "↲
+For 3→J To 19↲
+2→Mat A[2,J↲
+2→Mat A[6,J↲
+Next↲
+For 10→J To 12↲
+0→Mat A[2,J↲
+0→Mat A[6,J↲
+Next↲
+IfEnd↲
+If F=63↲
+Then 107→R↲
+For 2→J To 14 Step 12↲
+For 0→I To 6↲
+2→Mat A[3,J+I↲
+2→Mat A[5,J+I↲
+Locate J+I,3,"●"↲
+Locate J+I,5,"●"↲
+Next↲
+Next↲
+For 1→I To 6 Step 5↲
+For 10→J To 12 Step 2↲
+2→Mat A[I,J↲
+2→Mat A[I+1,J↲
+Locate J,I,"●"↲
+Locate J,I+1,"●"↲
+Next↲
+Next↲
+For 9→J To 13 Step 4↲
+For 2→I To 6 Step 4↲
+2→Mat A[I,J↲
+Locate J,I,"●"↲
+Next↲
+Next↲
+IfEnd↲
+If F=53↲
+Then 104→R↲
+For 2→I To 20 Step 3↲
+For 2→J To 6↲
+Locate I,J,"●"↲
+2→Mat A[J,I↲
+Next↲
+Next↲
+For 3→J To 12 Step 9↲
+2→Mat A[2,J↲
+2→Mat A[2,J+1↲
+2→Mat A[6,J+6↲
+2→Mat A[6,J+7↲
+Locate J,2,"●"↲
+Locate J+1,2,"●"↲
+Locate J+6,6,"●"↲
+Locate J+7,6,"●"↲
+Next↲
+IfEnd↲
+If F=74↲
+Then 91→R↲
+Locate 5,3,"............."↲
+Locate 5,5,"............."↲
+For 5→J To 17↲
+2→Mat A[3,J↲
+2→Mat A[5,J↲
+Next↲
+For 10→J To 12↲
+2→Mat A[1,J↲
+2→Mat A[7,J↲
+Locate J,1,"●"↲
+Locate J,7,"●"↲
+Next↲
+For 1→J To 19 Step 18↲
+For 2→I To 5 Step 3↲
+For 0→Q To 2↲
+2→Mat A[I,J+Q↲
+2→Mat A[I+1,J+Q↲
+Locate J+Q,I,"●"↲
+Locate J+Q,I+1,"●"↲
+Next↲
+Next↲
+Next↲
+IfEnd↲
+If F=64↲
+Then 93→R↲
+Locate 2,6,"..................."↲
+For 2→J To 20↲
+2→Mat A[6,J↲
+Next↲
+For 6→J To 14 Step 8↲
+For 0→I To 4↲
+2→Mat A[4,J+I↲
+2→Mat A[2,J+I+2↲
+Locate J+I,4,"●"↲
+Locate J+I+2,2,"●"↲
+Next↲
+Next↲
+For 4→J To 20 Step 8↲
+For 2→I To 4↲
+2→Mat A[I,J↲
+J≠20⇒2→Mat A[I,J+2↲
+Locate J,I,"●"↲
+J≠20⇒Locate J+2,I,"●"↲
+Next↲
+Next↲
+2→Mat A[4,2↲
+2→Mat A[5,2↲
+2→Mat A[2,2↲
+2→Mat A[2,3↲
+Locate 2,4,"●"↲
+Locate 2,5,"●"↲
+Locate 2,2,"●"↲
+Locate 3,2,"●"↲
+IfEnd↲
+If F=54↲
+Then 94→R↲
+Locate 1,3,"......................"↲
+Locate 1,5,"......................"↲
+Locate 10,3,"  "↲
+For 1→J To 21↲
+2→Mat A[3,J↲
+2→Mat A[5,J↲
+Next↲
+0→Mat A[3,10↲
+0→Mat A[3,11↲
+Locate 9,2,"●"↲
+2→Mat A[2,9↲
+For 1→J To 3↲
+2→Mat A[7,J↲
+Locate J,7,"●"↲
+Next↲
+For 6→J To 7↲
+2→Mat A[J,9↲
+Locate 9,J,"●"↲
+Next↲
+For 9→J To 16↲
+2→Mat A[1,J↲
+Locate J,1,"●"↲
+Next↲
+IfEnd↲
+For 1→J To M+1↲
+Do↲
+Int 21Ran#+1→A↲
+Int GRan#+H→B↲
+LpWhile Mat A[B,A↲
+If J=M+1↲
+Then 1→Mat A[B,A↲
+Locate A,B,"□"↲
+Else 2→Mat A[B,A↲
+Locate A,B,"●"↲
+IfEnd↲
+Next↲
+0→C~E↲
+0→T~V↲
+1→S↲
+3→N↲
+5→L↲
+0→Z↲
+While 1↲
+Isz N↲
+N=L⇒1→N↲
+Getkey↲
+If Ans=79↲
+Then Do↲
+Getkey↲
+LpWhile Ans≠31↲
+IfEnd↲
+If S↲
+Then If Ans=28↲
+Then 0→S↲
+º1→T↲
+IfEnd↲
+If Ans=37↲
+Then 0→S↲
+1→T↲
+IfEnd↲
+Else If Ans=27↲
+Then 0→T↲
+1→S↲
+IfEnd↲
+If Ans=38↲
+Then 0→T↲
+º1→S↲
+IfEnd↲
+IfEnd↲
+X+S→X↲
+Y+T→Y↲
+X=0⇒21→X↲
+X=22⇒1→X↲
+Y=0⇒7→Y↲
+Y=8⇒1→Y↲
+If Mat B[1,N↲
+Then 0→Mat A[Mat B[2,N],Mat B[1,N]↲
+Locate Mat B[1,N],Mat B[2,N]," "↲
+IfEnd↲
+Locate X,Y,"■"↲
+If 1=Mat A[Y,X↲
+Then Isz L↲
+Augment(Mat B,[[0][0→Mat B↲
+Do↲
+Int 21Ran#+1→A↲
+Int 7Ran#+1→B↲
+LpWhile Mat A[B,A↲
+1→Mat A[B,A↲
+Locate A,B,"□"↲
+L=R⇒1→Z↲
+If L=25 And r↲
+Then 2→Z↲
+r=π⇒1→Z↲
+IfEnd↲
+Else Mat A[Y,X⇒1→Z↲
+IfEnd↲
+Z⇒Break↲
+3→Mat A[Y,X↲
+X→Mat B[1,N↲
+Y→Mat B[2,N↲
+WhileEnd↲
+Z=1⇒Break↲
+LpWhile 1↲
+If r=π Or L=R↲
+Then ClrText↲
+For 1→J To 6↲
+Locate 1,J,"●"↲
+Locate J,1,"●"↲
+Next↲
+For 1→J To 14↲
+Locate J+6,1,"●"↲
+Locate J,7,"●"↲
+Next↲
+For 1→J To 7↲
+Locate 21,J,"●"↲
+Locate J+14,7,"●"↲
+Next↲
+Do↲
+Getkey↲
+Locate 8,4,"THE END"↲
+Locate 8,4,"       "↲
+LpWhile Ans≠31↲
+Else For 1→J To 7↲
+Locate X,Y,"+"↲
+Locate X,Y,"O"↲
+Next↲
+For 1→J To 7↲
+If J≠4↲
+Then Locate 1,J,"#####################"↲
+Else Locate 1,J,"###### ~PERDU~ ######"↲
+IfEnd↲
+Next↲
+For 1→J To 6↲
+Locate 1,J,"                     "↲
+Next↲
+IfEnd↲
+ClrText↲
+r⇒200(r-2)+10L-50→P↲
+r=π⇒2000→P↲
+0=r⇒10L-50→P↲
+ClrText↲
+1→θ↲
+1→r↲
+Cls↲
+While θ<65↲
+Text θ,1,r↲
+θ+6→θ↲
+r+1→r↲
+WhileEnd↲
+2→θ↲
+72→r↲
+1→Mat Z[1,1]↲
+Mat Z[1,1]→Z↲
+P→List Z[1]↲
+While θ≤Dim List 1↲
+List Z[θ]=1⇒Text 1,r,"A"↲
+List Z[θ]=2⇒Text 1,r,"B"↲
+List Z[θ]=3⇒Text 1,r,"C"↲
+List Z[θ]=4⇒Text 1,r,"D"↲
+List Z[θ]=5⇒Text 1,r,"E"↲
+List Z[θ]=6⇒Text 1,r,"F"↲
+List Z[θ]=7⇒Text 1,r,"G"↲
+List Z[θ]=8⇒Text 1,r,"H"↲
+List Z[θ]=9⇒Text 1,r,"I"↲
+List Z[θ]=10⇒Text 1,r,"J"↲
+List Z[θ]=11⇒Text 1,r,"K"↲
+List Z[θ]=12⇒Text 1,r,"L"↲
+List Z[θ]=13⇒Text 1,r,"M"↲
+List Z[θ]=14⇒Text 1,r,"N"↲
+List Z[θ]=15⇒Text 1,r,"O"↲
+List Z[θ]=16⇒Text 1,r,"P"↲
+List Z[θ]=17⇒Text 1,r,"Q"↲
+List Z[θ]=18⇒Text 1,r,"R"↲
+List Z[θ]=19⇒Text 1,r,"S"↲
+List Z[θ]=20⇒Text 1,r,"T"↲
+List Z[θ]=21⇒Text 1,r,"U"↲
+List Z[θ]=22⇒Text 1,r,"V"↲
+List Z[θ]=23⇒Text 1,r,"W"↲
+List Z[θ]=24⇒Text 1,r,"X"↲
+List Z[θ]=25⇒Text 1,r,"Y"↲
+List Z[θ]=26⇒Text 1,r,"Z"↲
+r+6→r↲
+θ+1→θ↲
+WhileEnd↲
+Text 1,120,P÷10↲
+26→X↲
+0→S↲
+While X≥16 And S=0↲
+List Z[1]>List X[1]⇒1→S↲
+List Z[1]>List X[1]⇒List 17→List 16↲
+List Z[1]>List X[1]⇒List 18→List 17↲
+List Z[1]>List X[1]⇒List 19→List 18↲
+List Z[1]>List X[1]⇒List 20→List 19↲
+List Z[1]>List X[1]⇒List 21→List 20↲
+List Z[1]>List X[1]⇒List 22→List 21↲
+List Z[1]>List X[1]⇒List 23→List 22↲
+List Z[1]>List X[1]⇒List 24→List 23↲
+List Z[1]>List X[1]⇒List 25→List 24↲
+List Z[1]>List X[1]⇒List 26→List 25↲
+List Z[1]>List X[1]⇒List Z→List X↲
+X-1→X↲
+WhileEnd↲
+13→r↲
+26→Mat Z[1,1]↲
+Mat Z[1,1]→Z↲
+2→θ↲
+1→X↲
+While ZY16↲
+While θ≤Dim List Z↲
+List Z[θ]=1⇒Text X,r,"A"↲
+List Z[θ]=2⇒Text X,r,"B"↲
+List Z[θ]=3⇒Text X,r,"C"↲
+List Z[θ]=4⇒Text X,r,"D"↲
+List Z[θ]=5⇒Text X,r,"E"↲
+List Z[θ]=6⇒Text X,r,"F"↲
+List Z[θ]=7⇒Text X,r,"G"↲
+List Z[θ]=8⇒Text X,r,"H"↲
+List Z[θ]=9⇒Text X,r,"I"↲
+List Z[θ]=10⇒Text X,r,"J"↲
+List Z[θ]=11⇒Text X,r,"K"↲
+List Z[θ]=12⇒Text X,r,"L"↲
+List Z[θ]=13⇒Text X,r,"M"↲
+List Z[θ]=14⇒Text X,r,"N"↲
+List Z[θ]=15⇒Text X,r,"O"↲
+List Z[θ]=16⇒Text X,r,"P"↲
+List Z[θ]=17⇒Text X,r,"Q"↲
+List Z[θ]=18⇒Text X,r,"R"↲
+List Z[θ]=19⇒Text X,r,"S"↲
+List Z[θ]=20⇒Text X,r,"T"↲
+List Z[θ]=21⇒Text X,r,"U"↲
+List Z[θ]=22⇒Text X,r,"V"↲
+List Z[θ]=23⇒Text X,r,"W"↲
+List Z[θ]=24⇒Text X,r,"X"↲
+List Z[θ]=25⇒Text X,r,"Y"↲
+List Z[θ]=26⇒Text X,r,"Z"↲
+r+6→r↲
+θ+1→θ↲
+WhileEnd↲
+Text X,60,List Z[1]÷10↲
+Z-1→Z↲
+2→θ↲
+X+6→X↲
+13→r↲
+WhileEnd↲
+Text 1,1,""
+
+Filename:SNAKEBEN
+ClrText↲
+↲
+1→A↲
+0→B↲
+↲
+1→X↲
+1→Y↲
+↲
+While 1↲
+↲
+X→C:Y→D↲
+Locate X,Y,"■"↲
+↲
+If A=1↲
+Then Isz X↲
+Else If A=-1↲
+Then Dsz X↲
+IfEnd↲
+IfEnd↲
+↲
+If B=1↲
+Then Isz Y↲
+Else If B=-1↲
+Then Dsz Y↲
+IfEnd↲
+IfEnd↲
+↲
+Getkey→K↲
+If K=37↲
+Then 0→A:1→B↲
+Else If K=28↲
+Then 0→A:-1→B↲
+Else If K=38↲
+Then -1→A:0→B↲
+Else If K=27↲
+Then 1→A:0→B↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+↲
+Locate C,D," "↲
+↲
+WhileEnd↲
+
+Filename:STARTREK
+1→θ↲
+Prog "API"↲
+21→Y↲
+1→X↲
+RanBin#(1,63)→O↲
+120→T↲
+While M=0↲
+Cls↲
+Getkey→G↲
+G=28 And Y<53⇒Y+1→Y↲
+G=37 And Y>1⇒Y-1→Y↲
+If T≤1↲
+Then If O<Y Or O>Y+10↲
+Then X+1→X↲
+120→T↲
+RanBin#(1,63)→O↲
+Else 1→M↲
+IfEnd↲
+IfEnd↲
+F-Line 1,Y,1,Y+10↲
+F-Line T,O,T+8,O↲
+T-X→T↲
+WhileEnd↲
+2→θ↲
+Prog "API"↲
+X
+
+Filename:SUDOKU
+ClrMat S↲
+{9,9}→Dim Mat S↲
+"Quel sudoku"↲
+?→X↲
+If X=1↲
+Then 5→Mat S[1,1]↲
+3→Mat S[2,1]↲
+7→Mat S[5,1]↲
+6→Mat S[1,2]↲
+1→Mat S[4,2]↲
+9→Mat S[5,2]↲
+5→Mat S[6,2]↲
+9→Mat S[2,3]↲
+8→Mat S[3,3]↲
+6→Mat S[8,3]↲
+8→Mat S[1,4]↲
+6→Mat S[5,4]↲
+3→Mat S[9,4]↲
+4→Mat S[1,5]↲
+8→Mat S[4,5]↲
+3→Mat S[6,5]↲
+1→Mat S[9,5]↲
+7→Mat S[1,6]↲
+2→Mat S[5,6]↲
+6→Mat S[9,6]↲
+6→Mat S[2,7]↲
+2→Mat S[7,7]↲
+8→Mat S[8,7]↲
+4→Mat S[4,8]↲
+1→Mat S[5,8]↲
+9→Mat S[6,8]↲
+5→Mat S[9,8]↲
+8→Mat S[5,9]↲
+7→Mat S[8,9]↲
+9→Mat S[9,9]↲
+Else 5→Mat S[1,1]↲
+3→Mat S[2,1]↲
+7→Mat S[5,1]↲
+6→Mat S[1,2]↲
+1→Mat S[4,2]↲
+9→Mat S[5,2]↲
+5→Mat S[6,2]↲
+9→Mat S[2,3]↲
+8→Mat S[3,3]↲
+6→Mat S[8,3]↲
+8→Mat S[1,4]↲
+6→Mat S[5,4]↲
+3→Mat S[9,4]↲
+4→Mat S[1,5]↲
+8→Mat S[4,5]↲
+3→Mat S[6,5]↲
+1→Mat S[9,5]↲
+7→Mat S[1,6]↲
+2→Mat S[5,6]↲
+6→Mat S[9,6]↲
+6→Mat S[2,7]↲
+2→Mat S[7,7]↲
+8→Mat S[8,7]↲
+4→Mat S[4,8]↲
+1→Mat S[5,8]↲
+9→Mat S[6,8]↲
+5→Mat S[9,8]↲
+8→Mat S[5,9]↲
+7→Mat S[8,9]↲
+9→Mat S[9,9]↲
+IfEnd↲
+1→θ↲
+Prog "API"↲
+F-Line 1,43,51,43↲
+F-Line 1,22,51,22↲
+F-Line 17,63,17,1↲
+F-Line 35,63,35,1↲
+For 0→Y To 8↲
+For 0→X To 8↲
+Text 7Y+1,6X+1,Mat S[X+1,Y+1]↲
+Next↲
+Next↲
+0→X↲
+0→Y↲
+Text 1,1,"X"↲
+1→J↲
+While J=1↲
+0→G↲
+Getkey→G↲
+If G≠0↲
+Then Text 7Y+1,6X+1,Mat S[X+1,Y+1]↲
+If G=31↲
+Then 1→N↲
+For 1→K To 9↲
+For 1→L To 9↲
+Mat S[K,L]=0⇒0→N↲
+Next↲
+Next↲
+N=1⇒0→J↲
+Else If G=37 And Y<8↲
+Then Y+1→Y↲
+Else If G=27 And X<8↲
+Then X+1→X↲
+Else If G=38 And X>0↲
+Then X-1→X↲
+Else If G=28 And Y>0↲
+Then Y-1→Y↲
+Else If Mat S[X+1,Y+1]≠0↲
+Then G=71⇒0→Mat S[X+1,Y+1]↲
+Else If G=72↲
+Then 1→Mat S[X+1,Y+1]↲
+Else If G=62↲
+Then 2→Mat S[X+1,Y+1]↲
+Else If G=52↲
+Then 3→Mat S[X+1,Y+1]↲
+Else If G=73↲
+Then 4→Mat S[X+1,Y+1]↲
+Else If G=63↲
+Then 5→Mat S[X+1,Y+1]↲
+Else If G=53↲
+Then 6→Mat S[X+1,Y+1]↲
+Else If G=74↲
+Then 7→Mat S[X+1,Y+1]↲
+Else If G=64↲
+Then 8→Mat S[X+1,Y+1]↲
+Else If G=54↲
+Then 9→Mat S[X+1,Y+1]↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+For 0→I To 8↲
+If I≠X↲
+Then If Mat S[X+1,Y+1]=Mat S[I+1,Y+1]↲
+Then 0→Mat S[X+1,Y+1]↲
+IfEnd↲
+IfEnd↲
+Next↲
+For 0→I To 8↲
+If I≠Y↲
+Then If Mat S[X+1,Y+1]=Mat S[X+1,I+1]↲
+Then 0→Mat S[X+1,Y+1]↲
+IfEnd↲
+IfEnd↲
+Next↲
+Text 7Y+1,6X+1,"X"↲
+IfEnd↲
+WhileEnd↲
+2→θ↲
+Prog "API"↲
+"Bien joué ·!·"
+
+Filename:SUITE
+17→U↲
+-2→R↲
+?→N↲
+U+NR⌟
+(N+1)(2U+NR)»2
+
+Filename:TEST3D
+1→θ↲
+Prog "API"↲
+↲
+
+Filename:TIME
+1→θ↲
+Prog "API"↲
+Mat T[1,1]→J↲
+Mat T[1,2]→N↲
+Mat T[1,3]→M↲
+Mat T[1,4]→A↲
+If J=1↲
+Then Text 1,1,"Lundi"↲
+23→X↲
+Else If J=2↲
+Then Text 1,1,"Mardi"↲
+24→X↲
+Else If J=3↲
+Then Text 1,1,"Mercredi"↲
+38→X↲
+Else If J=4↲
+Then Text 1,1,"Jeudi"↲
+22→X↲
+Else If J=5↲
+Then Text 1,1,"Vendredi"↲
+36→X↲
+Else If J=6↲
+Then Text 1,1,"Samedi"↲
+27→X↲
+Else If J=7↲
+Then Text 1,1,"Dimanche"↲
+37→X↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Text 1,X,N↲
+X+5→X↲
+If M=1↲
+Then Text 1,X,"janvier"↲
+X+30→X↲
+Else If M=2↲
+Then Text 1,X,"fevrier"↲
+X+30→X↲
+Else If M=3↲
+Then Text 1,X,"mars"↲
+X+23→X↲
+Else If M=4↲
+Then Text 1,X,"avril"↲
+X+23→X↲
+Else If M=5↲
+Then Text 1,X,"mai"↲
+X+15→X↲
+Else If M=6↲
+Then Text 1,X,"juin"↲
+X+18→X↲
+Else If M=7↲
+Then Text 1,X,"juillet"↲
+X+29→X↲
+Else If M=8↲
+Then Text 1,X,"aout"↲
+X+20→X↲
+Else If M=9↲
+Then Text 1,X,"septembre"↲
+X+42→X↲
+Else If M=10↲
+Then Text 1,X,"octobre"↲
+X+31→X↲
+Else If M=11↲
+Then Text 1,X,"novembre"↲
+X+40→X↲
+Else If M=12↲
+Then Text 1,X,"decembre"↲
+X+40→X↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Text 1,X,A↲
+While G≠47↲
+Getkey→G↲
+If G≠0↲
+Then If G=28↲
+Then If N=31↲
+Then If M=12↲
+Then 1→Mat T[1,2]↲
+1→Mat T[1,3]↲
+A+1→Mat T[1,4]↲
+Else M+1→Mat T[1,3]↲
+IfEnd↲
+IfEnd↲
+If J=7↲
+Then 1→Mat T[1,1]↲
+Else J+1→Mat T[1,1]↲
+IfEnd↲
+N+1→Mat T[1,2]↲
+IfEnd↲
+Stop↲
+IfEnd↲
+WhileEnd
+
+Filename:TOUCHE
+While 1↲
+Locate 1,1,Getkey↲
+WhileEnd
+
+Filename:TRIANGLE
+"X 1":?→A↲
+"Y 1":?→B↲
+"X 2":?→C↲
+"Y 2":?→D↲
+"X 3":?→E↲
+"Y 3":?→F↲
+(C-A)²+(D-B)²→M↲
+(E-A)²+(F-B)²→N↲
+(E-C)²+(F-D)²→O↲
+If M+N=O↲
+Then "Rectangle"↲
+Else "Pas rectangle"↲
+IfEnd
+
+Filename:TRIGONOM
+0→A↲
+π→B↲
+While B-A>10^-3↲
+(A+B)÷2→X↲
+If sin X>X÷2↲
+Then X→A↲
+Else X→B↲
+IfEnd↲
+WhileEnd↲
+Locate 1,1,A↲
+Locate 1,2,B
+
+Filename:WATCHDOG
+1→θ↲
+Prog "API"↲
+1→A↲
+1→B↲
+5→X↲
+63→Y↲
+F-Line B,Y,X-2,Y-2↲
+F-Line B,Y-4,X-3,Y-3↲
+While 1↲
+Getkey→G↲
+If G≠0↲
+Then If G=76↲
+Then Text 1,X,"A"↲
+4→L↲
+Else If G=66↲
+Then Text 1,X,"B"↲
+4→L↲
+Else If G=56↲
+Then Text 1,X,"C"↲
+4→L↲
+Else If G=46↲
+Then Text 1,X,"D"↲
+4→L↲
+Else If G=36↲
+Then Text 1,X,"E"↲
+4→L↲
+Else If G=26↲
+Then Text 1,X,"F"↲
+4→L↲
+Else If G=75↲
+Then Text 1,X,"G"↲
+4→L↲
+Else If G=65↲
+Then Text 1,X,"H"↲
+4→L↲
+Else If G=55↲
+Then Text 1,X,"I"↲
+4→L↲
+Else If G=45↲
+Then Text 1,X,"J"↲
+4→L↲
+Else If G=35↲
+Then Text 1,X,"K"↲
+5→L↲
+Else If G=25↲
+Then Text 1,X,"L"↲
+4→L↲
+Else If G=74↲
+Then Text 1,X,"M"↲
+6→L↲
+Else If G=64↲
+Then Text 1,X,"N"↲
+6→L↲
+Else If G=54↲
+Then Text 1,X,"O"↲
+4→L↲
+Else If G=73↲
+Then Text 1,X,"P"↲
+4→L↲
+Else If G=63↲
+Then Text 1,X,"Q"↲
+6→L↲
+Else If G=53↲
+Then Text 1,X,"R"↲
+4→L↲
+Else If G=43↲
+Then Text 1,X,"S"↲
+4→L↲
+Else If G=33↲
+Then Text 1,X,"T"↲
+4→L↲
+Else If G=72↲
+Then Text 1,X,"U"↲
+4→L↲
+Else If G=62↲
+Then Text 1,X,"V"↲
+4→L↲
+Else If G=52↲
+Then Text 1,X,"W"↲
+6→L↲
+Else If G=42↲
+Then Text 1,X,"X"↲
+4→L↲
+Else If G=32↲
+Then Text 1,X,"Y"↲
+4→L↲
+Else If G=71↲
+Then Text 1,X,"Z"↲
+4→L↲
+Else If G=44↲
+Then X-5-L→X↲
+Text 1,X," "↲
+Else X-5-L→X↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+X+L→X↲
+IfEnd↲
+A+1→A↲
+IfEnd↲
+F-Line X,Y-4,X,Y↲
+Text 1,X," "↲
+WhileEnd
+
+Filename:~DIZAINE
+r-Frac r→r↲
+r<0⇒-r→r↲
+r→Mat R[1,1]↲
+4→θ↲
+Prog "API"↲
+Mat R[1,1]-r→r↲
+While r Rmdr 10≠0↲
+r-10→r↲
+WhileEnd↲
+r÷10→r↲
+Return
+
+Filename:~ECHECS
+W=1⇒Goto 1↲
+W=2⇒Prog "~ECHEQU"↲
+Return↲
+↲
+Lbl 1↲
+If Z<0↲
+Then 1→V↲
+-Z→Z↲
+↲
+PlotChg 1,1↲
+PlotChg 35+8(r-1),1+8(θ-1)↲
+PlotChg 1,1↲
+PlotChg 35+8(r-1),9+8(θ-1)↲
+PlotChg 1,1↲
+PlotChg 31+8(r-1),5+8(θ-1)↲
+PlotChg 1,1↲
+PlotChg 39+8(r-1),5+8(θ-1)↲
+PlotChg 1,1↲
+↲
+IfEnd↲
+1+8(r-1)→r↲
+34+8(θ-1)→θ↲
+If Z=1↲
+Then Text r,θ,"P"↲
+Else If Z=2↲
+Then Text r,θ,"T"↲
+Else If Z=3↲
+Then Text r,θ,"C"↲
+Else If Z=4↲
+Then Text r,θ,"F"↲
+Else If Z=5↲
+Then Text r,θ-1,"Q"↲
+Else If Z=6↲
+Then Text r,θ,"R"↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+V⇒-Z→Z↲
+Return
+
+Filename:~F-LINE
+1→θ↲
+Prog "API"↲
+↲
+1→A↲
+1→B↲
+126→C↲
+63→D↲
+↲
+If A<C↲
+Then A→V↲
+C→X↲
+Else A→X↲
+C→V↲
+IfEnd↲
+↲
+If B<D↲
+Then B→W↲
+D→Y↲
+Else B→Y↲
+D→W↲
+IfEnd↲
+↲
+X-V→A↲
+Y-W→B↲
+↲
+If A>B↲
+Then B÷A→I↲
+For V→V To X↲
+PlotOn V,W↲
+W+I→W↲
+Next↲
+Else A÷B→I↲
+For W→W To Y↲
+PlotOn V,W↲
+V+I→V↲
+Next↲
+IfEnd
+
+Filename:~MATRIXF
+For 1→Y To Mat A[1,1]↲
+For 1→X To 9↲
+X≠1 Or Y≠1⇒42→Mat A[Y,X]↲
+Next↲
+Next
+
+Filename:~NBRCENT
+r-Frac r→r↲
+r<0⇒-r→r↲
+7→θ↲
+Prog "API"↲
+5→θ↲
+Prog "API"↲
+Return
+
+Filename:~NBRDIZA
+r-Frac r→r↲
+r<0⇒-r→r↲
+r→Mat R[1,1]↲
+4→θ↲
+Prog "API"↲
+Mat R[1,1]-r→r↲
+While r Rmdr 10≠0↲
+r-10→r↲
+WhileEnd↲
+r÷10→r↲
+4→θ↲
+Prog "API"↲
+Return
+
+Filename:~NBRLENG
+0→θ↲
+r<0⇒1→θ↲
+r<0⇒-r→r↲
+Frac r≠0⇒θ+10→θ↲
+rY0 And r<10⇒θ+1→θ↲
+rY10 And r<100⇒θ+2→θ↲
+rY100 And r<1000⇒θ+3→θ↲
+Return
+
+Filename:~NBRUNIT
+r-Frac r→r↲
+r<0⇒-r→r↲
+If rY10↲
+Then While r>10↲
+r-10→r↲
+WhileEnd↲
+IfEnd↲
+Return
+
+Filename:~SETBACK
+AxesOn↲
+CoordOn↲
+Return
+
+Filename:~SETGRAP
+0→A~Z↲
+ClrGraph↲
+ClrText↲
+Cls↲
+AxesOff↲
+ViewWindow 1,127,1,1,63,1↲
+Return
+
+Filename:~VIEWER3
+1→θ↲
+Prog "API"↲
+↲
+Text 1,1,"X: 0"↲
+Text 7,1,"Y: 0"↲
+63→A↲
+31→B↲
+While 1↲
+Getkey→G↲
+If G=28 Or G=27 Or G=37 Or G=38↲
+Then Text 14,1,"                        "↲
+Text 21,1,"                             "↲
+Text 28,1,"                             "↲
+Text 35,1,"                             "↲
+Text 42,1,"                             "↲
+For 1→Y To 200↲
+Next↲
+If G=28↲
+Then If Y=359↲
+Then 0→Y↲
+Else Y+1→Y↲
+IfEnd↲
+Text 7,1,"Y:"↲
+Text 7,7,"         "↲
+Text 7,12,Y↲
+Else If G=38↲
+Then If X=0↲
+Then 359→X↲
+Else X-1→X↲
+IfEnd↲
+Text 1,1,"X:"↲
+Text 1,7,"         "↲
+Text 1,12,X↲
+Else If G=27↲
+Then If X=359↲
+Then 0→X↲
+Else X+1→X↲
+IfEnd↲
+Text 1,1,"X:"↲
+Text 1,7,"         "↲
+Text 1,12,X↲
+Else If G=37↲
+Then If Y=0↲
+Then 359→Y↲
+Else Y-1→Y↲
+IfEnd↲
+Text 7,1,"Y:"↲
+Text 7,7,"         "↲
+Text 7,12,Y↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+WhileEnd↲
+Return↲
+↲
+0⇒Render↲
+Lbl 1↲
+Dim Mat A→List 1↲
+For 1→Y To List 1[1]↲
+For 1→X To 9↲
+X≠42⇒N↲
+Next↲
+If N=3↲
+Then ↲
+Else If N=6↲
+Then ↲
+Else If N=9↲
+Then ↲
+Else If N=12↲
+Then ↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+IfEnd↲
+Next↲
+Return
