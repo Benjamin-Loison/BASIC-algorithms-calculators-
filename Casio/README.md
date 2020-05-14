@@ -1,3 +1,32 @@
 Text files are here just as a quick preview.
 
 Only 2048 and Snake are just modifications of friends' programs.
+
+Convert .G1M to .txt with this:
+
+Ù retour à la ligne
+Á /
+Ë √
+ã ->
+æ π
+’ ²
+ä θ
+È !=
+½ i
+Æ e
+À *
+» ◿
+Ø ◢
+É <=
+º -
+× =>
+¼ 10^
+Ê >=
+#E60A é
+#E50A É
+#E60B ê
+¸Ë or ¸√ ∛
+ª r
+ê Y
+
+should not use <= or => for implication otherwise twice used with inferior or equal...
