@@ -1,0 +1,14 @@
+0=>{1,127}->Dim Mat A
+
+1->X
+10->J
+
+For 2->I To J
+10X+(I Rmdr 10)->X
+Next
+
+For 2->I To J
+X Rmdr 10->Y
+(X-Y)◢0->X
+Y◢
+Next

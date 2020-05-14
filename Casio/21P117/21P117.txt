@@ -1,0 +1,11 @@
+?->N
+1->U
+1->S
+0->I
+While I<N
+2U+1-I->U
+S+U->S
+I+1->I
+WhileEnd
+U◢
+S

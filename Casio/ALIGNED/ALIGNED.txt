@@ -1,0 +1,10 @@
+"x 1":?->A
+"y 1":?->B
+"x 2":?->C
+"y 2":?->D
+"x 3":?->E
+"y 3":?->F
+If AB=CD=EF
+Then "Alignés"
+Else "Non alignés"
+IfEnd

@@ -1,0 +1,106 @@
+1->θ
+Prog "API"
+Mat T[1,1]->J
+Mat T[1,2]->N
+Mat T[1,3]->M
+Mat T[1,4]->A
+If J=1
+Then Text 1,1,"Lundi"
+23->X
+Else If J=2
+Then Text 1,1,"Mardi"
+24->X
+Else If J=3
+Then Text 1,1,"Mercredi"
+38->X
+Else If J=4
+Then Text 1,1,"Jeudi"
+22->X
+Else If J=5
+Then Text 1,1,"Vendredi"
+36->X
+Else If J=6
+Then Text 1,1,"Samedi"
+27->X
+Else If J=7
+Then Text 1,1,"Dimanche"
+37->X
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+Text 1,X,N
+X+5->X
+If M=1
+Then Text 1,X,"janvier"
+X+30->X
+Else If M=2
+Then Text 1,X,"fevrier"
+X+30->X
+Else If M=3
+Then Text 1,X,"mars"
+X+23->X
+Else If M=4
+Then Text 1,X,"avril"
+X+23->X
+Else If M=5
+Then Text 1,X,"mai"
+X+15->X
+Else If M=6
+Then Text 1,X,"juin"
+X+18->X
+Else If M=7
+Then Text 1,X,"juillet"
+X+29->X
+Else If M=8
+Then Text 1,X,"aout"
+X+20->X
+Else If M=9
+Then Text 1,X,"septembre"
+X+42->X
+Else If M=10
+Then Text 1,X,"octobre"
+X+31->X
+Else If M=11
+Then Text 1,X,"novembre"
+X+40->X
+Else If M=12
+Then Text 1,X,"decembre"
+X+40->X
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+Text 1,X,A
+While G!=47
+Getkey->G
+If G!=0
+Then If G=28
+Then If N=31
+Then If M=12
+Then 1->Mat T[1,2]
+1->Mat T[1,3]
+A+1->Mat T[1,4]
+Else M+1->Mat T[1,3]
+IfEnd
+IfEnd
+If J=7
+Then 1->Mat T[1,1]
+Else J+1->Mat T[1,1]
+IfEnd
+N+1->Mat T[1,2]
+IfEnd
+Stop
+IfEnd
+WhileEnd

@@ -1,0 +1,15 @@
+"Test sur 2 ou 3 Y":?->A
+If A=2
+Then "Y1 et Y2 sont:"
+If Y1=Y2
+Then "Équivalentes"
+Else "Non équivalentes"
+IfEnd
+Else If A=3
+Then "Y1, Y2 et Y3 sont:"
+If Y1=Y2=Y3
+Then "Équivalentes"
+Else "Non équivalentes"
+IfEnd
+IfEnd
+IfEnd

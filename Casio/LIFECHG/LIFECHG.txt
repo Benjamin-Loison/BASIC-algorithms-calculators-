@@ -1,0 +1,7 @@
+?->X:X->r
+?->N:N->θ
+?->O
+
+Prog "LIFE-GN"
+10^N->P
+X-rP+OP

@@ -1,0 +1,5 @@
+For 1->Y To Mat A[1,1]
+For 1->X To 9
+X!=1 Or Y!=1=>42->Mat A[Y,X]
+Next
+Next

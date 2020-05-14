@@ -1,0 +1,8 @@
+0=> + GT => + EFICIENTLEARN 1 DRAW FOR 0,1,2
+
+1->θ
+Prog "API"
+
+{10,10}->Dim Mat A
+
+F-Line 10,10,20,10

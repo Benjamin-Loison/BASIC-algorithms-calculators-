@@ -1,0 +1,57 @@
+1->θ
+Prog "API"
+
+For 1->I To 65 Step 16
+Vertical I+30
+F-Line 31,I,95,I
+Next
+
+ClrMat A
+{4,4}->Dim Mat A
+
+While B=0
+
+If RanInt#(0,1)
+Then 2->G
+Else 4->G
+IfEnd
+
+Do
+RanInt#(1,4)->X
+RanInt#(1,4)->Y
+LpWhile Mat A[X,Y]!=0
+
+G->Mat A[X,Y]
+G->T
+8->θ
+Prog "API"
+
+0=>GAME ENDED ?
+
+Do
+Getkey->K
+If K!=0
+Then If K=28
+Then 1->r
+Else If K=27
+Then 2->r
+Else If K=37
+Then 3->r
+Else If K=38
+Then 4->r
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+If r!=0
+Then 1->M
+0->r
+IfEnd
+IfEnd
+LpWhile M=0
+0->M
+
+0=>GAME ENDED ?
+
+
+WhileEnd

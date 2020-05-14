@@ -1,0 +1,16 @@
+?->A:?->B:?->N
+
+(B-A)◢->H
+A->X
+0->U~V
+
+For 0->K To N-1
+
+U+HY1->U
+X+H->X
+V+HY1->V
+
+Next
+
+U◢
+V

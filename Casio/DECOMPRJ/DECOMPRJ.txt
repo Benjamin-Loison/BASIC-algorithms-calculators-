@@ -1,0 +1,9 @@
+?->N
+For 2->I To N
+0->O
+While N◢=Int (N◢)
+Isz O
+N◢->N
+WhileEnd
+O=>{O,I}◢
+Next

@@ -1,0 +1,11 @@
+?->A
+0->M
+0->N
+While N²<=A And 1.2^M<=A
+N+1->N
+M+1->M
+WhileEnd
+M◢
+N◢
+
+N

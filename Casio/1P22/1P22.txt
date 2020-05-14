@@ -1,0 +1,16 @@
+1->M
+0->G
+
+While M
+
+G²-G+11->X
+
+For 2->I To X-1
+Frac (X◢)=0=>0->M
+Next
+Isz G
+
+WhileEnd
+
+G-1◢
+X

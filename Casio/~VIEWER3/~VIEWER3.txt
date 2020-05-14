@@ -1,0 +1,78 @@
+1->θ
+Prog "API"
+
+Text 1,1,"X: 0"
+Text 7,1,"Y: 0"
+63->A
+31->B
+While 1
+Getkey->G
+If G=28 Or G=27 Or G=37 Or G=38
+Then Text 14,1,"                        "
+Text 21,1,"                             "
+Text 28,1,"                             "
+Text 35,1,"                             "
+Text 42,1,"                             "
+For 1->Y To 200
+Next
+If G=28
+Then If Y=359
+Then 0->Y
+Else Y+1->Y
+IfEnd
+Text 7,1,"Y:"
+Text 7,7,"         "
+Text 7,12,Y
+Else If G=38
+Then If X=0
+Then 359->X
+Else X-1->X
+IfEnd
+Text 1,1,"X:"
+Text 1,7,"         "
+Text 1,12,X
+Else If G=27
+Then If X=359
+Then 0->X
+Else X+1->X
+IfEnd
+Text 1,1,"X:"
+Text 1,7,"         "
+Text 1,12,X
+Else If G=37
+Then If Y=0
+Then 359->Y
+Else Y-1->Y
+IfEnd
+Text 7,1,"Y:"
+Text 7,7,"         "
+Text 7,12,Y
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+WhileEnd
+Return
+
+0=>Render
+Lbl 1
+Dim Mat A->List 1
+For 1->Y To List 1[1]
+For 1->X To 9
+X!=42=>N
+Next
+If N=3
+Then 
+Else If N=6
+Then 
+Else If N=9
+Then 
+Else If N=12
+Then 
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+Next
+Return

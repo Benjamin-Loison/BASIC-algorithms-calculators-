@@ -1,0 +1,5 @@
+?->K
+0->N
+While 0.4^N>=10^-K
+Isz N
+WhileEnd

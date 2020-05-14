@@ -1,0 +1,9 @@
+?->X
+2->I
+
+Do
+X◢->D
+I+1->I
+LpWhile Frac (D)
+
+D

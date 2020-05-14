@@ -1,0 +1,26 @@
+1->θ
+Prog "API"
+21->Y
+1->X
+RanInt#(1,63)->O
+120->T
+While M=0
+Cls
+Getkey->G
+G=28 And Y<53×Y+1->Y
+G=37 And Y>1×Y-1->Y
+If T<=1
+Then If O<Y Or O>Y+10
+Then X+1->X
+120->T
+RanInt#(1,63)->O
+Else 1->M
+IfEnd
+IfEnd
+F-Line 1,Y,1,Y+10
+F-Line T,O,T+8,O
+T-X->T
+WhileEnd
+2->θ
+Prog "API"
+X

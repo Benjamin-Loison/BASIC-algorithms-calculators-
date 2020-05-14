@@ -1,0 +1,8 @@
+0->A~G
+While G!=79
+If Getkey!=G
+Then Getkey->G
+A+1->A
+Locate 1,1,A
+IfEnd
+WhileEnd

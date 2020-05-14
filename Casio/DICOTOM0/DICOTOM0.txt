@@ -1,0 +1,9 @@
+"A":?->A
+"B":?->B
+While B-A>10^-12
+(A+B)◢->M
+If (M^3+2M-2)*(A^3+2A-2)>0
+Then M->A
+Else M->B
+IfEnd
+WhileEnd

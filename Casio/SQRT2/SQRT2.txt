@@ -1,0 +1,11 @@
+1->A
+2->B
+While B-A>10^-9
+(A+B)/2->X
+If X²>2
+Then X->B
+Else X->A
+IfEnd
+WhileEnd
+Locate 1,1,A
+Locate 1,2,B

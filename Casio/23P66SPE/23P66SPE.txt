@@ -1,0 +1,4 @@
+1->X
+While Frac (√(2056X))!=0
+Isz X
+WhileEnd

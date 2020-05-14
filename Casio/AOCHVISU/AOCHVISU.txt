@@ -1,0 +1,14 @@
+θ!=42=>Cls
+0->θ
+
+Dim List 2->L
+63->r
+
+For 1->I To L
+
+List 2[I->X
+r-List 3[I->Y
+
+PlotOn X,Y
+
+Next

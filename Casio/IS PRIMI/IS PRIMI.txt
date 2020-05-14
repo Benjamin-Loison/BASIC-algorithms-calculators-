@@ -1,0 +1,21 @@
+0=>IS PRIME WITHOUT STOP
+?->X
+1->P
+
+X<2=>0->P
+
+If P
+Then 
+
+For 2->I To √X
+
+Frac (X◢)=0=>0->P
+
+Next
+
+IfEnd
+
+If P
+Then "Prime"
+Else "Not prime"
+IfEnd

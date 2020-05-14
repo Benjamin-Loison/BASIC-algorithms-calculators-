@@ -1,0 +1,39 @@
+ClrMat M
+{3,3}->Dim Mat M
+1->θ
+Prog "API"
+1->P
+F-Line 15,56,15,18
+F-Line 27,56,27,18
+F-Line 7,28,35,28
+F-Line 7,44,35,44
+While M=0
+Getkey->G
+If G=37 And Y<2 Or G=28 And Y>0 Or G=38 And X>0 Or G=27 And X<2
+Then Text 13(Y+1),10(X+1)-1," "
+If G=37
+Then Y+1->Y
+Else If G=28
+Then Y-1->Y
+Else If G=38
+Then X-1->X
+Else If G=27
+Then X+1->X
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+Text 13(Y+1),10(X+1)-1,"#E6A6"
+Else If G=31 And Mat M[X+1,Y+1]=0
+Then P->Mat M[X+1,Y+1]
+If P=1
+Then Text 13(Y+1),10(X+1)-1,"X"
+2->P
+Else Text 13(Y+1),10(X+1)-1,"O"
+1->P
+IfEnd
+For 0->T To 250
+Next
+IfEnd
+IfEnd
+WhileEnd

@@ -1,0 +1,18 @@
+1->Dim List 1
+AxesOff
+Cls
+e^2->P
+
+For 1->I To 20
+
+Int P->J
+J->List 1[I
+10(P-J)->P
+
+Next
+
+Text 1,1,List 1[1
+Text 1,5,"."
+For 2->I To Dim List 1
+Text 1,4I,List 1[I
+Next

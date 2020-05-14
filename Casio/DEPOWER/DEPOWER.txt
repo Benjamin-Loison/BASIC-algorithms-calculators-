@@ -1,0 +1,8 @@
+0->I
+?->A:?->B
+ClrText
+While 1
+Locate 1,1,I
+A^I Rmdr B
+Isz I
+WhileEnd

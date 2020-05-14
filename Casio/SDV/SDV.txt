@@ -1,0 +1,30 @@
+"Borne a":?->A
+"Borne b":?->B
+"Précision (entier >= 100)":?->N
+
+(B-A)/N->E
+0->I
+
+For 0->K To N-2
+
+A+KE->O
+A+(K+1)E->P
+A+(K+2)E->Q
+
+O²-O+1->X
+P²-P+1->Y
+Q²-Q+1->Z
+
+If (Y>X And Z<Y) Or (Y<X And Z>Y)
+Then "SDV modifié entre"
+P◢
+"et"
+Q◢
+I+1->I
+IfEnd
+
+Next
+
+If I=0
+Then "Aucun changement de sdv trouvée"
+IfEnd

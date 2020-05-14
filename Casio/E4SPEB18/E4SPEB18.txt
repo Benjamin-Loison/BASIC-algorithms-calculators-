@@ -1,0 +1,5 @@
+For -5->X To 10
+For -5->Y To 10
+7X-3Y=1=>{X,Y}◢
+Next
+Next

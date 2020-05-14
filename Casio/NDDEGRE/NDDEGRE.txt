@@ -1,0 +1,48 @@
+"a:":?->A
+"b:":?->B
+"c:":?->C
+ClrText
+Locate 1,1,"Y ="
+Locate 5,1,A
+If B>=0
+Then Locate 7,1,"X² +"
+Locate 12,1,B
+Else Locate 7,1,"X² -"
+Locate 12,1,-B
+IfEnd
+If C>=0
+Then Locate 14,1,"+"
+Locate 16,1,C
+Else Locate 14,1,"-"
+Locate 16,1,-C
+IfEnd
+Locate 1,2,"A:"
+Locate 3,2,A
+Locate 1,3,"B:"
+Locate 3,3,B
+Locate 1,4,"C:"
+Locate 3,4,C
+Locate 1,5,"Sdv:"
+If A>0
+Then Locate 5,5,"#E698 #E697"
+Else Locate 5,5,"#E697 #E698"
+IfEnd
+Locate 1,6,"Sommet et #E640:"
+-B/2A->P
+Locate 13,6,P
+Locate 1,7,"#E543:"
+B²-4AC->D
+Locate 11,7,"#E641:"
+Locate 3,7,D
+Locate 13,7,-D/4A
+If D<0
+Then Locate 13,3,"R(0)"
+Else If D=0
+Then Locate 13,3,"R(1):"
+Locate 13,4,P
+Else If D>0
+Then Locate 13,3,"R(2):"
+Locate 13,4,(-B-√D)/2A
+Locate 13,5,(-B+√D)/2A
+IfEnd
+IfEnd

@@ -1,0 +1,8 @@
+"Saisir a:":?->A
+"Saisir b:":?->B
+While A Rmdr B!=0
+A Rmdr B->R
+B->A
+R->B
+WhileEnd
+"Le PGCD est:":B

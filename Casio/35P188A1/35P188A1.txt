@@ -1,0 +1,6 @@
+0->S
+"Number of rectangles":?->N
+For 0->K To N-1
+K◢->X
+S+(X+2)e^-X◢->S
+Next

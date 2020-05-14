@@ -1,0 +1,6 @@
+ClrText
+"Echantillon":?->N
+"Pourcunage":?->P
+ClrText
+Locate 1,1,P-(1/√N)
+Locate 1,2,P+(1/√N)

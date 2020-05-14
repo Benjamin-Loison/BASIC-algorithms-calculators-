@@ -1,0 +1,3 @@
+For -75->X To 75
+X²+6X!=0=>8 Rmdr (X²+6X)=0=>X◢
+Next

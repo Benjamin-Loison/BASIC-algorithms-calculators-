@@ -1,0 +1,126 @@
+1->theta
+Prog "API"
+1->A
+1->B
+5->X
+63->Y
+F-Line B,Y,X-2,Y-2
+F-Line B,Y-4,X-3,Y-3
+While 1
+Getkey->G
+If G!=0
+Then If G=76
+Then Text 1,X,"A"
+4->L
+Else If G=66
+Then Text 1,X,"B"
+4->L
+Else If G=56
+Then Text 1,X,"C"
+4->L
+Else If G=46
+Then Text 1,X,"D"
+4->L
+Else If G=36
+Then Text 1,X,"E"
+4->L
+Else If G=26
+Then Text 1,X,"F"
+4->L
+Else If G=75
+Then Text 1,X,"G"
+4->L
+Else If G=65
+Then Text 1,X,"H"
+4->L
+Else If G=55
+Then Text 1,X,"I"
+4->L
+Else If G=45
+Then Text 1,X,"J"
+4->L
+Else If G=35
+Then Text 1,X,"K"
+5->L
+Else If G=25
+Then Text 1,X,"L"
+4->L
+Else If G=74
+Then Text 1,X,"M"
+6->L
+Else If G=64
+Then Text 1,X,"N"
+6->L
+Else If G=54
+Then Text 1,X,"O"
+4->L
+Else If G=73
+Then Text 1,X,"P"
+4->L
+Else If G=63
+Then Text 1,X,"Q"
+6->L
+Else If G=53
+Then Text 1,X,"R"
+4->L
+Else If G=43
+Then Text 1,X,"S"
+4->L
+Else If G=33
+Then Text 1,X,"T"
+4->L
+Else If G=72
+Then Text 1,X,"U"
+4->L
+Else If G=62
+Then Text 1,X,"V"
+4->L
+Else If G=52
+Then Text 1,X,"W"
+6->L
+Else If G=42
+Then Text 1,X,"X"
+4->L
+Else If G=32
+Then Text 1,X,"Y"
+4->L
+Else If G=71
+Then Text 1,X,"Z"
+4->L
+Else If G=44
+Then X-5-L->X
+Text 1,X," "
+Else X-5-L->X
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+X+L->X
+IfEnd
+A+1->A
+IfEnd
+F-Line X,Y-4,X,Y
+Text 1,X," "
+WhileEnd

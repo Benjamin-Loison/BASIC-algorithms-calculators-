@@ -1,0 +1,7 @@
+For 0->X To 45
+For 0->Y To 45
+If (GCD(X,Y)+X)=9 And (LCM(X,Y)+Y)=45
+Then {X,Y}◢
+IfEnd
+Next
+Next

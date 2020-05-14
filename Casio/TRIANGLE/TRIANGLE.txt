@@ -1,0 +1,13 @@
+"X 1":?->A
+"Y 1":?->B
+"X 2":?->C
+"Y 2":?->D
+"X 3":?->E
+"Y 3":?->F
+(C-A)²+(D-B)²->M
+(E-A)²+(F-B)²->N
+(E-C)²+(F-D)²->O
+If M+N=O
+Then "Rectangle"
+Else "Pas rectangle"
+IfEnd

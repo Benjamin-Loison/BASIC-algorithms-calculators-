@@ -1,0 +1,107 @@
+ClrText
+
+{21,7}->Dim Mat A
+
+1->Dim List 1
+1->Dim List 2
+
+10->X:3->Y
+X->List 1[1
+Y->List 2[1
+
+1->Mat A[X,Y
+1->D
+1->B
+
+While 1
+
+If B
+Then 
+
+X->E:Y->F
+While Mat A[E,F
+
+RanInt#(1,21)->E
+RanInt#(1,7)->F
+
+WhileEnd
+0->B
+2->Mat A[E,F
+Locate E,F,"A"
+IfEnd
+
+Getkey->G
+If G!=0
+Then 
+
+If G=28
+Then 0->D
+Else If G=27
+Then 1->D
+Else If G=37
+Then 2->D
+Else If G=38
+Then 3->D
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+
+IfEnd
+
+Dim List 1->L
+
+Locate List 1[L],List 2[L]," "
+
+If D=0
+Then Dsz Y
+Else If D=1
+Then Isz X
+Else If D=2
+Then Isz Y
+Else If D=3
+Then Dsz X
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+
+If X=0 Or X=22 Or Y=0 Or Y=8
+Then Goto 1
+Else If Mat A[X,Y]=1
+Then Goto 1
+Else If Mat A[X,Y]=2
+Then 1->B
+Isz L
+List 1->List 3
+List 2->List 4
+L->Dim List 1
+For 1->I To L-1
+List 3[I]->List 1[I
+Next
+L->Dim List 2
+For 1->I To L-1
+List 4[I]->List 2[I
+Next
+IfEnd
+IfEnd
+IfEnd
+
+Locate X,Y,"O"
+
+List 1[L]×0->Mat A[List 1[L],List 2[L
+1->Mat A[X,Y
+
+For L->I To 2 Step º1
+List 1[I-1]->List 1[I]
+List 2[I-1]->List 2[I]
+Next
+X->List 1[1:Y->List 2[1
+WhileEnd
+
+Lbl 1
+ClrText
+Locate 7,4,"GAME OVER"
+While Getkey=0
+WhileEnd
+ClrText

@@ -1,0 +1,13 @@
+?->N
+√N->R
+2->I
+While Frac (N◢)!=0 And I<=R
+
+Isz I
+WhileEnd
+If I>R
+Then "N premier"
+Else "N composé"
+"Diviseur"
+I
+IfEnd

@@ -1,0 +1,6 @@
+For 1->I To Dim List 2
+List 2[I]->V
+ln V->N
+N->List 3[I]
+
+Next

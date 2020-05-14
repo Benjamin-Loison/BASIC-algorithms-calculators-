@@ -1,0 +1,9 @@
+?->X
+0->M
+For 2->I To X
+Frac (X/I)=0=>Isz M
+Next
+If Frac (M/2)=0
+Then "Allumée"
+Else "Éteinte"
+IfEnd

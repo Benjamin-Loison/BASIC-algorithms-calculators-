@@ -1,0 +1,37 @@
+1->theta
+Prog "API"
+
+1->A
+1->B
+126->C
+63->D
+
+If A<C
+Then A->V
+C->X
+Else A->X
+C->V
+IfEnd
+
+If B<D
+Then B->W
+D->Y
+Else B->Y
+D->W
+IfEnd
+
+X-V->A
+Y-W->B
+
+If A>B
+Then B◢->I
+For V->V To X
+PlotOn V,W
+W+I->W
+Next
+Else A◢->I
+For W->W To Y
+PlotOn V,W
+V+I->V
+Next
+IfEnd

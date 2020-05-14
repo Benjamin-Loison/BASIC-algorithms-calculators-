@@ -1,0 +1,9 @@
+RanInt#(1,100)->N
+0->X
+While X!=N
+?->X
+If X<N
+Then "Plus grand"
+Else "Plus petit"
+IfEnd
+WhileEnd

@@ -1,0 +1,49 @@
+1->θ
+Prog "API"
+30->S
+Text 24,14,A
+Text 30,14,B
+Text 36,14,D
+RanInt#(0,9)->M
+RanInt#(0,9)->N
+RanInt#(0,9)->O
+F-Line 10,22,10,42
+F-Line 30,22,30,42
+F-Line 10,42,30,42
+F-Line 10,22,30,22
+F-Line 22,42,22,46
+F-Line 26,42,26,46
+F-Line 22,46,26,46
+While Z=0 And S>=1
+ClrText
+Getkey!=0 Or S=0=>Text 24,14,A
+Getkey!=0 Or S=0=>Text 30,14,B
+Getkey!=0 Or S=0=>Text 36,14,D
+Getkey=38 And C>=1=>C-1->C
+Getkey=27 And C<=1=>C+1->C
+C!=0=>Text 24,6,"#E5DD"
+C!=1=>Text 30,6,"#E5DD"
+C!=2=>Text 36,6,"#E5DD"
+Getkey!=0 Or S=0=>Text 24+C*6,6,"O"
+Getkey=28 And A<=8 And C=0 And A!=M=>A+1->A
+Getkey=37 And A>=1 And C=0 And A!=M=>A-1->A
+Getkey=28 And B<=8 And C=1 And B!=N=>B+1->B
+Getkey=37 And B>=1 And C=1 And B!=N=>B-1->B
+Getkey=28 And D<=8 And C=2 And D!=O=>D+1->D
+Getkey=37 And D>=1 And C=2 And D!=O=>D-1->D
+Getkey=79 And A=M=>1->J
+Getkey=79 And B=N=>1->K
+Getkey=79 And D=O=>1->L
+1=J And 1=K And 1=L=>1->Z
+1=J=>Text 24,20,"*"
+1=K=>Text 30,20,"*"
+1=L=>Text 36,20,"*"
+S-1->S
+Text 1,80,S
+WhileEnd
+If S>=1
+Then Text 30,60,"C'est gagne ·!·"
+Else Text 30,60,"Score nul"
+IfEnd
+2->θ
+Prog "API"

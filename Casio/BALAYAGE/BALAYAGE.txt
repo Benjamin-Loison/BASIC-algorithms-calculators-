@@ -1,0 +1,37 @@
+"Réel":?->A
+"Réel":?->B
+"Entier >= 100":?->N
+
+(B-A)◢->E
+0->I
+
+For 0->K To N-1
+
+A+KE->O
+A+(K+1)E->P
+O^3-3O^2-2O+6->Y
+P^3-3P^2-2P+6->Z
+
+If Y=0
+Then O◢
+"est"
+I◢
+"valeur"
+I+1->I
+IfEnd
+
+If YZ<0
+Then P◢
+"et"
+O◢
+"entre"
+I◢
+"valeur"
+I+1->I
+IfEnd
+
+Next
+
+If I=0
+Then "Aucune valeur trouvée"
+IfEnd

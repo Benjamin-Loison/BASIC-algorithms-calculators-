@@ -1,0 +1,12 @@
+?->X
+0->N
+
+For 1->I To X
+
+If Frac (X◢)=0
+Then I◢
+Isz N
+IfEnd
+
+Next
+N◢

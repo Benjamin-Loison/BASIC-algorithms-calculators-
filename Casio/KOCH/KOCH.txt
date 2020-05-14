@@ -1,0 +1,16 @@
+Cls:Deg:30->A
+?->P:3*4^P->N
+0.65◢^P->D
+0.15->X:0.5->Y
+Plot X,Y
+Lbl 0
+-2->S:P->I
+Lbl 1
+(4^I)◢->J
+Frac ((N-1+J◢)◢)=0=>1->S
+Dsz I:Goto 1
+X+Dcos A->X
+Y+1.5Dsin A->Y
+A+60S->A
+Plot X,Y:Line
+Dsz N:Goto 0

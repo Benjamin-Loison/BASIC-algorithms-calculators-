@@ -1,0 +1,42 @@
+W=1=>Goto 1
+W=2=>Prog "~ECHEQU"
+Return
+
+Lbl 1
+If Z<0
+Then 1->V
+-Z->Z
+
+PlotChg 1,1
+PlotChg 35+8(r-1),1+8(theta-1)
+PlotChg 1,1
+PlotChg 35+8(r-1),9+8(theta-1)
+PlotChg 1,1
+PlotChg 31+8(r-1),5+8(theta-1)
+PlotChg 1,1
+PlotChg 39+8(r-1),5+8(theta-1)
+PlotChg 1,1
+
+IfEnd
+1+8(r-1)->r
+34+8(theta-1)->theta
+If Z=1
+Then Text r,theta,"P"
+Else If Z=2
+Then Text r,theta,"T"
+Else If Z=3
+Then Text r,theta,"C"
+Else If Z=4
+Then Text r,theta,"F"
+Else If Z=5
+Then Text r,theta-1,"Q"
+Else If Z=6
+Then Text r,theta,"R"
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+V=>-Z->Z
+Return

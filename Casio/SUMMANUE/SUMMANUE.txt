@@ -1,0 +1,4 @@
+1->S
+For 0->K To 4
+S*(2K+1)->S
+Next

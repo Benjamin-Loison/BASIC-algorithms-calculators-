@@ -1,0 +1,8 @@
+"X 1":?->A
+"Y 1":?->B
+"X 2":?->C
+"Y 2":?->D
+If A◢=B◢
+Then "Colinéaires"
+Else "Non colinéaires"
+IfEnd

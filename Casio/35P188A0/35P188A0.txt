@@ -1,0 +1,5 @@
+0->S
+For 0->K To 3
+K◢->X
+S+(X+2)e^-X◢->S
+Next

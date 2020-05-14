@@ -1,0 +1,4 @@
+63->N
+Do
+N+1->N
+LpWhile Frac √((N²+N)◢)!=0

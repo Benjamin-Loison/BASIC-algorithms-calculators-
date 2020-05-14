@@ -1,0 +1,16 @@
+?->A
+Do
+"B":?->B
+LpWhile B=0
+
+Abs A->A:Abs B->B
+
+A Rmdr B->R
+
+While R!=0
+B->A
+R->B
+A Rmdr B->R
+WhileEnd
+
+B

@@ -1,0 +1,11 @@
+r-Frac r->r
+r<0=>-r->r
+r->Mat R[1,1]
+4->theta
+Prog "API"
+Mat R[1,1]-r->r
+While r Rmdr 10!=0
+r-10->r
+WhileEnd
+r◢0->r
+Return

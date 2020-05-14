@@ -1,0 +1,49 @@
+1->θ
+Prog "API"
+63->X
+21->Y
+While 1
+Cls
+PlotOn X,Y
+Getkey->G
+If G!=0
+Then If G=28
+Then 1->D
+Else If G=37
+Then 2->D
+Else If G=27
+Then 3->D
+Else If G=38
+Then 4->D
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+If D=1 And Y=63
+Then 2->D
+Else If D=2 And Y=1
+Then 1->D
+Else If D=3 And X=127
+Then 4->D
+Else If D=4 And X=1
+Then 3->D
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+If D=1
+Then Isz Y
+Else If D=2
+Then Dsz Y
+Else If D=3
+Then Isz X
+Else If D=4
+Then Dsz X
+IfEnd
+IfEnd
+IfEnd
+IfEnd
+WhileEnd
+2->θ
+Prog "API"

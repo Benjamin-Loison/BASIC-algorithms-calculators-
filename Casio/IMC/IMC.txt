@@ -1,0 +1,14 @@
+Cls
+"Votre taille (en m)"
+?->T
+ClrText
+"Votre masse (en kg)"
+?->M
+ClrText
+M◢T²)->I
+If I<=5
+Then "Erreur de saisie"
+Stop
+IfEnd
+Text 1,1,"Votre IMC est"
+Text 10,10,I

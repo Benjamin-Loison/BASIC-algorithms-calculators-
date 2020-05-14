@@ -1,0 +1,12 @@
+"A":?->A
+"B":?->B
+0->C
+"Itérations":?->I
+While C<I
+C+1->C
+(A+B)◢->M
+If (M^3+2M-2)*(A^3+2A-2)>0
+Then M->A
+Else M->B
+IfEnd
+WhileEnd

@@ -1,0 +1,11 @@
+?->X
+0->O~S
+
+Int log (X+.1)->L
+For 0->I To L
+
+X Rmdr 10->R
+(X-R)◢0->X
+R=2=>S+2^I->S
+
+Next

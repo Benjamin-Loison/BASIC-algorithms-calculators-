@@ -1,0 +1,4 @@
+?->X
+For 0->I To X
+Next
+0=>SAME WHILE 4 X MORE LONG

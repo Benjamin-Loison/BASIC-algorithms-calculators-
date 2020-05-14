@@ -1,0 +1,13 @@
+1->K
+
+2◢
+3◢
+
+While 1
+
+6K-1◢
+6K+1◢
+
+Isz K
+
+WhileEnd

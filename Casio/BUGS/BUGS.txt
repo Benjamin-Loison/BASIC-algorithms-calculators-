@@ -1,0 +1,18 @@
+Cls
+0->X~Y
+PlotOn 1,1
+
+0=>No render good coo
+PlotOn 1+X,2
+
+0=>This render disablle the next
+PlotOn 5X,5Y
+
+0=>Patch plot smthing
+
+PlotOn 8X+32,8Y+3
+
+BUG IF USE 0=>EXECUTED
+If 0
+Then ViewWindow -1.65,1.65,1,0.9,-0.9,0
+IfEnd

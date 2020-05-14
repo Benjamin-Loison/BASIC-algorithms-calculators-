@@ -1,0 +1,27 @@
+10^-6->E
+3π◢-E->B
+π◢+E->A
+
+B-A->R
+10^-4->C
+0->N
+
+While R>=C
+
+(A+B)◢->M
+tan M-M->Y
+If Y=0
+Then Break
+Else If (tan A-A)Y<0
+Then M->B
+Else M->A
+IfEnd
+IfEnd
+R◢->R
+
+N+1->N
+
+WhileEnd
+
+R<C=>M◢
+N◢

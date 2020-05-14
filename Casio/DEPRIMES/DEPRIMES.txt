@@ -1,0 +1,29 @@
+?->N
+
+2->D
+ClrList1
+1->I
+
+While D<=√N
+
+While Int (N◢)=N◢
+
+D->List 1[I]
+
+N◢->N
+I+1->I
+
+WhileEnd
+
+If D=2
+Then 3->D
+Else D+2->D
+IfEnd
+
+WhileEnd
+
+If N>1
+Then N->List 1[I]
+IfEnd
+
+List 1

@@ -1,0 +1,24 @@
+?->O
+0->P
+-1->R:1->S
+sin 1->U
+1->Q
+ClrText
+
+For 2->N To O
+
+R+((-1)◢²)->R
+Locate 1,1,R
+Locate 1,7,-R
+
+U+(sin N)◢²->U
+Locate 1,4,U
+
+U>P=>U->P
+U<Q=>U->Q
+Locate 1,3,Q
+Locate 1,5,P
+
+Locate 15,7,N
+
+Next

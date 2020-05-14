@@ -1,0 +1,7 @@
+r-Frac r->r
+r<0=>-r->r
+7->theta
+Prog "API"
+5->theta
+Prog "API"
+Return

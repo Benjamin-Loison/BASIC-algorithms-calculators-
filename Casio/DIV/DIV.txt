@@ -1,0 +1,12 @@
+?->A:?->B
+
+Intg (A◢)->C
+
+If B>0 Or C=A◢
+Then C->Q
+Else C+1->Q
+IfEnd
+
+A-BQ->R
+Q◢
+R

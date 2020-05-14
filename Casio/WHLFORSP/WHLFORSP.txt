@@ -1,0 +1,8 @@
+?->X
+0->I
+While I<=X
+Isz I
+WhileEnd
+
+0=>X=10000=>Isz =9.0s
+0=> ◢ =>I+1->I = 11.6s

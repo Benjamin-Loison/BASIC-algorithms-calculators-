@@ -1,0 +1,5 @@
+For 1->I To θ
+(r-r Rmdr 10)◢0->r
+Next
+
+r Rmdr 10->r

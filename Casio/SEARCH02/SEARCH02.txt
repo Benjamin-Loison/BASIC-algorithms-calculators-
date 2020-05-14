@@ -1,0 +1,24 @@
+10^-6->E
+π/2+E->A
+3π/2->B
+
+(A+B)/2->U
+
+0->M
+(tan A)²->N
+(N-M)/(N+M)->K
+(B-A)/2->R
+
+0->I
+
+While (K^(I+1))R>C
+
+U◢
+
+tan U-U->U
+(N-M)/(N+M)->K
+Isz I
+
+WhileEnd
+
+U◢

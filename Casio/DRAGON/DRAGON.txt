@@ -1,0 +1,24 @@
+0=>P298
+ClrGraph
+Cls
+AxesOff
+100->I
+ViewWindow 1,127,1,1,63,1
+
+i->A
+4+i->B
+15->N
+
+Lbl 0
+
+If N=0
+Then F-Line ReP A,ImP A,ReP B,ImP B
+Stop
+IfEnd
+
+A+(1+i)(B-A)◢->B
+Dsz N
+N◢
+
+
+Goto 0

@@ -1,0 +1,22 @@
+"From"
+"0 Dec 1 Hex"
+"2 Bin 3 Oct"
+?->C
+
+C=0=>Dec:C=1=>Hex
+C=2=>Bin:C=3=>Oct
+
+"X":?->X
+
+">Dec"
+Dec
+X◢
+">Hex"
+Hex
+X◢
+">Bin"
+Bin
+X◢
+">Oct"
+Oct
+X

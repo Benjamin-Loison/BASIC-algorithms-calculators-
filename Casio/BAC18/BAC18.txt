@@ -1,0 +1,13 @@
+2->A
+3->B
+While B-A>0.1
+(A+B)◢->M
+If e^M+e^(-M)-4M-2>0
+Then M->B
+Else M->A
+IfEnd
+"M":M◢
+"A":A◢
+"B":B◢
+"B-A":(B-A)◢
+WhileEnd

@@ -1,0 +1,10 @@
+For 0->N To 25
+
+0->S
+For 0->K To N-1
+S+exp^(2Kipi/N)->S
+Next
+
+S/.
+
+Next

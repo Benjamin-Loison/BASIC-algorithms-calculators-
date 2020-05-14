@@ -1,0 +1,7 @@
+For 1->N To 20
+0->S
+For 0->K To N-1
+(2iKπ/N)->P
+S+e^P->S
+Next
+Next

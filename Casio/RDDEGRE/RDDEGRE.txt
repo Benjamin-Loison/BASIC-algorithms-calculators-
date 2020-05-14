@@ -1,0 +1,22 @@
+0=>ERRORS
+0=>Cardan
+
+"Z#E5C3+PZ²+Q"
+"P":?->P
+"Q":?->Q
+
+Q²+4P/3->D
+
+If D>0
+Then 
+(-Q-√D)/2->X
+(-Q+√D)/2->Y
+
+e^(2iπ/3)->J
+
+∛Y+∛X◢
+J∛Y+J²∛X◢
+J²√Y+(J^3)∛X
+
+Else "#E543<=0"
+IfEnd

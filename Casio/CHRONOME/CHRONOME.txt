@@ -1,0 +1,5 @@
+0->X
+While 1
+Locate 1,1,X
+X+0.022->X
+WhileEnd

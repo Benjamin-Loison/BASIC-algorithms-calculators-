@@ -1,0 +1,79 @@
+1->θ
+Prog "API"
+61->M
+65->N
+63->X
+While Z=0
+If I<=9
+Then Cls
+Text 1,1,I
+0->Y
+I=1=>RanInt#(60,66)->X
+I=2=>RanInt#(50,76)->X
+I>=3=>RanInt#(27,100)->X
+F-Line 42,63,42,42
+F-Line 84,63,84,42
+F-Line 42,42,84,42
+F-Line M,46,N,46
+0->G
+While G!=28
+Getkey->G
+While Y<46
+Getkey->G
+G=38=>X-1->X
+G=27=>X+1->X
+F-Line X,Y,X,Y
+Y+1->Y
+If Y=46
+Then If X>M And X<N
+Then I+1->I
+Else 0->I
+IfEnd
+IfEnd
+WhileEnd
+WhileEnd
+Else If I>=10
+Then Cls
+Text 1,1,I
+0->Y
+I=1=>RanInt#(60,66)->X
+I=2=>RanInt#(50,76)->X
+I>=3=>RanInt#(27,100)->X
+F-Line 42,63,42,42
+F-Line 84,63,84,42
+F-Line 42,42,84,42
+F-Line M,46,N,46
+0->G
+While G!=28
+Getkey->G
+While Y<46
+Getkey->G
+G=38=>X-1->X
+G=27=>X+1->X
+F-Line X,Y,X,Y
+Y+1->Y
+If Y=46
+Then If X>M And X<N
+Then I+1->I
+Else 0->I
+IfEnd
+IfEnd
+If N=82
+Then 1->S
+Else If M=45
+Then 0->S
+IfEnd
+IfEnd
+If S=0
+Then M+1->M
+N+1->N
+Else M-1->M
+N-1->N
+IfEnd
+WhileEnd
+WhileEnd
+IfEnd
+IfEnd
+WhileEnd
+2->θ
+Prog "API"

@@ -1,0 +1,14 @@
+Dim List 5->B
+List 5[B]->I
+While 1
+Isz I
+Locate 1,1,I
+0->A
+For 2->Y To √I
+Frac (I/Y)=0=>1->A
+Next
+If A=0
+Then I->List 5[B]
+Isz B
+IfEnd
+WhileEnd

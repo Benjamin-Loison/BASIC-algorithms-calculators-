@@ -1,0 +1,8 @@
+r-Frac r->r
+r<0=>-r->r
+If r>=10
+Then While r>10
+r-10->r
+WhileEnd
+IfEnd
+Return

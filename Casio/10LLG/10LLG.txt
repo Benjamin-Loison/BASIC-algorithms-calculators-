@@ -1,0 +1,22 @@
+100->Y
+Y->Dim List 1
+1->List 1[1
+
+Y->Dim List 2
+0->List 2[1
+
+For 2->N To Y
+
+N-1->Z
+1+Int (Z◢)->I
+1+Int (Z◢)->J
+1+Int (Z◢)->K
+
+List 1[I]->A
+List 1[J]->B
+List 1[K]->C
+
+A+B+C->List 1[N
+Z->List 2[N
+
+Next

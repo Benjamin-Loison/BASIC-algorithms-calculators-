@@ -1,0 +1,51 @@
+θ=1=>Goto 1
+θ=2=>Goto 2
+θ=3=>Goto 3
+θ=4=>Goto 4
+θ=5=>Goto 5
+θ=6=>Goto 6
+θ=7=>Goto 7
+θ=8=>Goto 8
+{1,1}->Dim Mat R
+Return
+
+0=>Set graph
+Lbl 1
+Prog "~SETGRAP"
+Return
+
+0=>Set back normal graph
+Lbl 2
+Prog "~SETBACK"
+Return
+
+0=>Characters of number
+Lbl 3
+Prog "~NBRLENG"
+Return
+
+0=>Return unités
+Lbl 4
+Prog "~NBRUNIT"
+Return
+
+0=>Return dizaines...
+Lbl 5
+Prog "~NBRDIZA"
+Return
+
+0=>Return centaines...
+Lbl 6
+Prog "~NBRCENT"
+Return
+
+Lbl 7
+Prog "~DIZAINE"
+Return
+
+0~PRINT TXT MIDDLE
+Lbl 8
+T->r
+Prog "~NBRLENG"
+Text 16(Y-1)+5,16(X-1)+39-θ,T
+Return

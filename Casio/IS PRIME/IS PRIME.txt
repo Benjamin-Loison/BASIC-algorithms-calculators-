@@ -1,0 +1,17 @@
+?->X
+
+If X<2
+Then "Not prime"
+Stop
+IfEnd
+
+For 2->I To √X
+
+If Frac (X◢)=0
+Then "Not prime"
+Stop
+IfEnd
+
+Next
+
+"Prime"

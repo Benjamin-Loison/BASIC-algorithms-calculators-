@@ -1,0 +1,27 @@
+1->θ
+Prog "API"
+
+"I":?->I:0=>132
+"R":?->R:0=>31
+
+128->X
+64->Y
+2π◢->C
+
+Rad
+
+X◢->A
+Y◢->B
+
+For 0->K To I-1
+
+KC->D
+A+Rcos D->E
+B+Rsin D->F
+
+RndFix(E,0)->E
+RndFix(F,0)->F
+
+PxlOn F,E
+
+Next

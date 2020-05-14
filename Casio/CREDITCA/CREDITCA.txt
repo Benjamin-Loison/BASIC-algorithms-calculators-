@@ -1,0 +1,29 @@
+16->Dim List 1
+
+For 1->K To 16
+?->List 1[K
+Next
+
+For 1->K To 15 Step 2
+2List 1[K]->N
+
+If N>=10
+Then N Rmdr 10->U
+(N-U)◢0->D
+D+U->N
+IfEnd
+
+N->List 1[K]
+Next
+
+0->S
+For 1->K To 16
+S+List 1[K]->S
+Next
+
+S Rmdr 10->R
+If R
+Then "La clé doit être:"
+(List 1[16]-R) Rmdr 10
+Else "Vérifiée"
+IfEnd

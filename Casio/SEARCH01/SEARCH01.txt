@@ -1,0 +1,25 @@
+10^-6->E
+3π/2-E->B
+
+10^-4->C
+
+While R>C
+
+R◢
+
+tan A-A->D
+A-R((tan A-A)/(tan B-B-tan A+A))->M
+tan M-M->Y
+If Y=0
+Then Break
+Else If DY<0
+Then M->B
+Else M->A
+IfEnd
+IfEnd
+
+Abs (B-A)->R
+
+WhileEnd
+
+M◢

@@ -1,0 +1,11 @@
+?->A
+0->N
+While N²<=A
+Isz N
+WhileEnd
+N◢
+0->N
+While 1.2^N<=A
+Isz N
+WhileEnd
+N

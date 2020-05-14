@@ -1,0 +1,16 @@
+-3->A
+7->B
+0.1->S
+
+Int ((B-A)◢)->D
+D->Dim List 1
+D->Dim List 2
+
+1->I
+For A->X To B Step S
+
+X->List 1[I]
+πX+e^1->List 2[I]
+Isz I
+
+Next

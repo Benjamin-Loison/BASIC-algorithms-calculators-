@@ -1,0 +1,6 @@
+?->A:0->U:0->R
+While R!=1
+Isz U
+(UA Rmdr 26)->R
+R◢
+WhileEnd

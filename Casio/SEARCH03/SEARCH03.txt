@@ -1,0 +1,26 @@
+5->B
+-5->A
+
+B-A->R
+10^-10->C
+0->N
+
+While R>=C
+
+(A+B)/2->M
+cos M-M->Y
+If Y=0
+Then Break
+Else If (cos A-A)Y<0
+Then M->B
+Else M->A
+IfEnd
+IfEnd
+R/2->R
+
+N+1->N
+
+WhileEnd
+
+R<C=>M◢
+N◢

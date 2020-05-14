@@ -1,0 +1,16 @@
+0->A
+For -75->N To 75
+
+If 1
+Then 
+
+If Frac ((2N+5)◢-7◿2))=0
+Then A Rmdr 7->X
+Locate 1+3X,(A-X)◢+1,N
+Isz A
+IfEnd
+
+IfEnd
+
+Next:While Getkey=0
+WhileEnd

@@ -1,0 +1,11 @@
+0->A
+π->B
+While B-A>10^-3
+(A+B)/2->X
+If sin X>X/2
+Then X->A
+Else X->B
+IfEnd
+WhileEnd
+Locate 1,1,A
+Locate 1,2,B

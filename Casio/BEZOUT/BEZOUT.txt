@@ -1,0 +1,31 @@
+"A="?->A
+"B="?->B
+
+
+1->R
+1->U
+0->V
+0->X
+1->Y
+
+While R>0
+
+MOD(A,B)->R
+Int (A◢)->Q
+B->A
+R->B
+U-XQ->S
+X->U
+S->X
+V-QY->T
+Y->V
+T->Y
+
+WhileEnd
+
+Locate 1,5,"PGCD="
+Locate 6,5,A
+Locate 1,6,"U="
+Locate 3,6,U
+Locate 1,7,"V="
+Locate 3,7,V

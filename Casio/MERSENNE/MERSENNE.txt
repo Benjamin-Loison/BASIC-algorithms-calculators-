@@ -1,0 +1,21 @@
+1->Dim List 1
+
+For 1->E To 250
+
+2^E-1->X
+
+Locate 1,1,"-1+2^"
+Locate 6,1,E
+
+1->P
+2->I
+While I<=√X And P
+
+Frac (X/I)=0=>0->P
+
+Isz I
+WhileEnd
+
+P->List 1[E]
+
+Next

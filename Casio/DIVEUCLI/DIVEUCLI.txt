@@ -1,0 +1,6 @@
+"Division euclidienne de:":?->A
+"par:":?->B
+"Quotient:"
+((A-A Rmdr B)◢)◢
+"Reste:"
+A Rmdr B◢

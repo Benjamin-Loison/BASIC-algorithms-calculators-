@@ -1,0 +1,4 @@
+{2,127}->Dim Mat A
+
+0=>USE BINARY CONV
+

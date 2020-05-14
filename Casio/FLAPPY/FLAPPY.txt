@@ -1,0 +1,39 @@
+1->θ
+Prog "API"
+63->X
+30->D
+RanInt#(1,20)->A
+RanInt#(43,63)->B
+F-Line X,63,X,B
+F-Line X,1,X,A
+While G=0
+Getkey->G
+WhileEnd
+0->G
+While M=0
+F-Line C,D,C,D
+C=63 And D<=A=>1->M
+C=63 And D>=B=>1->M
+If Getkey!=G
+Then Getkey->G
+D+3->D
+IfEnd
+D-1->D
+D<=0=>1->M
+C+1->C
+If C>=127
+Then P+1->P
+1->C
+Cls
+RanInt#(1,20)->A
+A+P->A
+RanInt#(43,63)->B
+B-P->B
+F-Line X,63,X,B
+F-Line X,1,X,A
+30->D
+IfEnd
+WhileEnd
+2->θ
+Prog "API"
+P

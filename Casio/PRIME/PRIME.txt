@@ -1,0 +1,12 @@
+?->N
+√N->R
+2->I
+While (N/I)!=Int (N/I) And 2<=I<=R
+I+1->I
+WhileEnd
+If I>R
+Then "N premier"
+Else "N composé"
+"Diviseur"
+I
+IfEnd

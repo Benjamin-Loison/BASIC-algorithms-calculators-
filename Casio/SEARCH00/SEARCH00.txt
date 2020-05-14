@@ -1,0 +1,26 @@
+10^3->B
+1->A
+
+B-A->R
+10^-8->C
+0->N
+
+While R>=C
+
+(A+B)/2->M
+M^3-3M+1->Y
+If Y=0
+Then Break
+Else If (A^3-3A+1)Y<0
+Then M->B
+Else M->A
+IfEnd
+IfEnd
+R/2->R
+
+N+1->N
+
+WhileEnd
+
+R<C=>M◢
+N◢

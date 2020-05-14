@@ -1,0 +1,5 @@
+For 0->X To 18
+For 0->Y To 9
+24X+45Y=438=>{X,Y}◢
+Next
+Next

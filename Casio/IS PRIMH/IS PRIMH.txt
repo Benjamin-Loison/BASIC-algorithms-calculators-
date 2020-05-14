@@ -1,0 +1,23 @@
+0=>IS PRIMI WITH WHLE
+0=>1.5 LONGER THAN FOR LOOP FOR 2^19-1
+?->X
+1->P
+
+X<2=>0->P
+
+If P
+Then 
+
+2->I
+While I<=√X And P
+
+Frac (X◢)=0=>0->P
+
+Isz I
+WhileEnd
+IfEnd
+
+If P
+Then "Prime"
+Else "Not prime"
+IfEnd
