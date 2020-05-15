@@ -26,3 +26,6 @@ Star Trek
 
 ![alt text](https://raw.githubusercontent.com/Benjamin-Loison/BASIC-calculator-algorithms/master/Casio/STARTREK/STARTREK.jpg)
 
+<ins>Texas:</ins>
+
+Koch et Mandelbr à venir lorsque j'aurai réparé ma TI.
