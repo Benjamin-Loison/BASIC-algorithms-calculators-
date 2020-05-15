@@ -1,6 +1,6 @@
 # BASIC calculator algorithms
 
-Casio:
+<ins>Casio:</ins>
 
 Basket
 
