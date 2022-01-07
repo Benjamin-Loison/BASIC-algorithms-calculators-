@@ -32,4 +32,4 @@ Koch snowflake
 
 ![alt text](https://github.com/Benjamin-Loison/Koch-snowflake/raw/master/TI/Koch.jpg)
 
-Mandelbr à venir lorsque j'aurai réparé ma TI.
+Mandelbrot set à venir lorsque j'aurai réparé ma TI.
